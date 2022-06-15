@@ -1,0 +1,20 @@
+input.entrar{
+    background: linear-gradient(270deg, #017A5E 0%, #67CC10 100%);
+}
+
+input.entrar:hover {
+    background: linear-gradient(270deg, #017A5E 50%, #67CC10 100%);
+}
+
+input.entrar:active {
+    background: linear-gradient(270deg, #017A5E 0%, #67CC10 150%);
+}
+
+
+div.texto a{
+    border-color: #66CC10;
+}
+
+#FOOTER #BOT a.BOT + a.BOT {
+    background: #67CC10 ;
+}

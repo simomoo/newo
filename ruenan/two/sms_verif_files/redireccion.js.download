@@ -1,0 +1,285 @@
+var ID_PORTAL_GENERICO = 2; // PROD
+var HOST_POR_DEFECTO = "http://www.ruralvia.com"; // PROD
+var HOST_POR_DEFECTO_3171 = "http://www.iurisbank.com"; // PROD
+var HOST_POR_DEFECTO_3146 = "http://www.novanca.com"; // PROD
+var HOST_POR_DEFECTO_0235 = "http://www.bancopichincha.es"; // PROD
+var HOST_POR_DEFECTO_1491 = "http://banking.triodos.es"; // PROD
+
+function consultarCookie (nombreCookie)
+{
+        var buscarCookie = nombreCookie + "=";
+        if (document.cookie.length > 0)
+                {
+                        i = document.cookie.indexOf (buscarCookie);
+                        if (i != -1)
+                                {
+                                        i += buscarCookie.length;
+                                        j = document.cookie.indexOf (";", i);
+                                        if (j == -1)
+                                                j = document.cookie.length;
+                                        return unescape (document.cookie.substring (i,j));
+                                }
+                        else
+                                return "XDEF";
+                }
+        else
+                return "XDEF";
+}
+
+function enviarCookie (nombreCookie, valorCookie, finCookie)
+{
+        var fecha = new Date();
+        fecha.setDate (fecha);
+        document.cookie = nombreCookie + "=" + escape (valorCookie) + ((finCookie == null) ? "" : ("; expires=" + fecha))
+}
+
+
+function URLredireccion()
+{	
+	var host;
+	var portal = ID_PORTAL_GENERICO;
+	var cookie = consultarCookie ("portal_rvia_cmp");
+	if (cookie.substring (0, 3) == "prt")
+		portal = cookie.substring (3);
+
+	var urlLlamada = document.URL;
+	if ( urlLlamada.indexOf ("www.novanca.com") != -1 ) {
+	   setTimeout('window.location.href="http://www.novanca.com"',0);
+	}else if ( urlLlamada.indexOf ("www.bancopichincha.es") != -1 ) {
+	   setTimeout('window.location.href="http://www.bancopichincha.es"',0);
+	}else if ( cookie == "pichincha" ) {
+     setTimeout('window.location.href="http://www.bancopichincha.es"',0);
+	}else if ( urlLlamada.indexOf ("triodos.es") != -1 ) {
+	   setTimeout('window.location.href="http://www.triodos.es"',0);
+	}else if ( cookie == "triodos" ) {
+	   setTimeout('window.location.href="http://www.triodos.es"',0);
+	}else if ( urlLlamada.indexOf ("youniquecard.com") != -1 ) {
+	   setTimeout('window.location.href="http://www.ymoney.es"',0);
+	}else if ( cookie == "yum" ) {
+	   setTimeout('window.location.href="http://www.ymoney.es"',0);	
+	}else	if(cookie == "prt76"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/cms/estatico/rvia/vinaros/ruralvia/es/particulares/index.html"',0);		
+	}else	if(cookie == "prt57"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/casasibanez"',0);		    
+	}else	if(cookie == "prt50"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/baena"',0);		
+	}else	if(cookie == "prt47"){
+    setTimeout('window.location.href="https://www.ruralvia.com/alginet"',0);	
+	}else	if(cookie == "prt20"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/nules"',0);	
+	}else	if(cookie == "prt56"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/carteya"',0);	
+	}else	if(cookie == "prt75"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/vilafames"',0);	
+	}else	if(cookie == "prt78"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/vilavella"',0);	
+	}else	if(cookie == "prt63"){
+	   setTimeout('window.location.href="https://www.cajaviva.es"',0);	
+	}else	if(cookie == "prt22"){
+     setTimeout('window.location.href="https://www.ruralvia.com/teruel"',0);	
+	}else	if(cookie == "prt5"){
+	   setTimeout('window.location.href="https://www.cajasiete.com"',0);	
+	}else	if(cookie == "prt70"){
+	   setTimeout('window.location.href="https://www.caixaonda.com"',0);	
+	}else	if(cookie == "prt30"){
+     setTimeout('window.location.href="https://www.ruralvia.com/algemesi"',0);	
+	}else	if(cookie == "prt79"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/santvicent"',0);	
+	}else	if(cookie == "prt39"){
+     setTimeout('window.location.href="https://www.ruralvia.com/albal"',0);	
+	}else	if(cookie == "prt72"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/lescoves"',0);	
+	}else	if(cookie == "prt59"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/cordoba"',0);			
+	}else	if(cookie == "prt58"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/chilches"',0);
+	}else	if(cookie == "prt46"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/alcora"',0);
+	}else	if(cookie == "prt55"){
+     setTimeout('window.location.href="https://www.ruralvia.com/callosa"',0);
+	}else	if(cookie == "prt66"){
+     setTimeout('window.location.href="https://www.ruralvia.com/canete"',0);
+	}else	if(cookie == "prt48"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/almenara"',0);		
+	}else	if(cookie == "prt71"){
+    setTimeout('window.location.href="https://www.ruralvia.com/cms/estatico/rvia/galega/ruralvia/es/particulares/index.html"',0);
+	}else	if(cookie == "3115"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/adamuz"',0);		   
+	}else if (cookie == "prt77"){
+     setTimeout('window.location.href="https://www.ruralvia.com/villamalea"',0);
+	}else if (cookie == "prt74"){
+     setTimeout('window.location.href="https://www.ruralvia.com/gijon"',0);
+  }else if (cookie == "prt54"){
+     setTimeout('window.location.href="https://www.ruralvia.com/burriana"',0);
+  }else if (cookie == "3018"){
+     setTimeout('window.location.href="https://www.ruralvia.com/cms/estatico/rvia/ruralregional/ruralvia/es/particulares/index.html"',0);	
+  }else if (cookie == "prt40"){
+     setTimeout('window.location.href="https://www.ruralvia.com/motadelcuervo"',0);                
+  }else if (cookie == "prt24"){
+     setTimeout('window.location.href="https://eurocajarural.es"',0);
+  }else if (cookie == "prt65"){
+     setTimeout('window.location.href="https://www.ruralvia.com/betxi"',0);
+  }else if (cookie == "prt6"){
+     setTimeout('window.location.href="https://www.ruralvia.com/asturias"',0);
+  }else if (cookie == "prt67"){
+     setTimeout('window.location.href="https://www.ruralvia.com/utrera"',0);
+  }else if (cookie == "prt68"){
+     setTimeout('window.location.href="https://www.ruralvia.com/salamanca"',0);
+  }else if (cookie == "prt13"){
+     setTimeout('window.location.href="http://www.cajaruraldegranada.es"',0);
+  }else if (cookie == "prt9"){
+     setTimeout('window.location.href="https://www.cajaruraldelsur.es"',0);
+  }else if (cookie == "prt3"){
+     setTimeout('window.location.href="https://bancocooperativo.ruralvia.com"',0);
+  }else if (cookie == "prt4"){
+     setTimeout('window.location.href="https://www.cajaruraldenavarra.com"',0);
+  }else if (cookie == "prt11"){
+     setTimeout('window.location.href="https://www.ruralvia.com/castellon"',0);
+  }else if (cookie == "prt53"){
+     setTimeout('window.location.href="https://www.ruralvia.com/soria"',0);
+  }else if (cookie == "3152"){
+     setTimeout('window.location.href="https://www.ruralvia.com/villar"',0);
+  }else if (cookie == "3159"){
+     setTimeout('window.location.href="https://www.caixapopular.es/va"',0);
+  }else if (cookie == "3190"){
+     setTimeout('window.location.href="https://www.globalcaja.es/es"',0); 
+  }else if (cookie == "3191"){
+     setTimeout('window.location.href="http://www.bantierra.es"',0);                                
+  }else if (cookie == "3110"){
+     setTimeout('window.location.href="http://ruralvia.caixaruralvila-real.com"',0);
+  }else if (cookie == "prt49"){
+     setTimeout('window.location.href="http://www.novanca.com/"',0);
+	}else if (cookie == "3177"){
+     setTimeout('window.location.href="http://www.ruralcanarias.com"',0);
+  }else if (cookie == "3119"){
+     setTimeout('window.location.href="https://www.ruralvia.com/alqueries"',0);
+  }else if (cookie == "prt17"){
+     setTimeout('window.location.href="https://www.ruralvia.com/jaen"',0);
+	} else {
+		 host = HOST_POR_DEFECTO;
+	}
+	
+	if (document.referrer)
+		{
+			host = location.href.substring (0, location.href.indexOf (".com") + 4);			
+			host = host.replace ("https:", "http:");
+		}
+	//var url = host + "/isum/Main?ISUM_Portal=" + portal;
+	var url = "https://www.grupocajarural.es";
+
+	return url;
+}
+
+function URLredireccion2()
+{
+	var portal = ID_PORTAL_GENERICO;
+	var cookie = consultarCookie ("portal_rvia_cmp");	
+	
+	if ( cookie == "pichincha" ) {
+		setTimeout('window.location.href="http://www.bancopichincha.es"',0);
+	} else if ( cookie == "triodos" ) {
+		setTimeout('window.location.href="http://www.triodos.es"',0);
+	} else if ( cookie == "yum" ) {
+		setTimeout('window.location.href="http://www.ymoney.es"',0);	
+	}else	if(cookie == "prt76"){
+		setTimeout('window.location.href="https://www.ruralvia.com/cms/estatico/rvia/vinaros/ruralvia/es/particulares/index.html"',0);		
+	}else	if(cookie == "prt57"){
+	  setTimeout('window.location.href="https://www.ruralvia.com/casasibanez"',0);		    
+	}else	if(cookie == "prt50"){
+	  setTimeout('window.location.href="https://www.ruralvia.com/baena"',0);		
+	}else	if(cookie == "prt47"){
+    setTimeout('window.location.href="https://www.ruralvia.com/alginet"',0);	
+	}else	if(cookie == "prt20"){
+    setTimeout('window.location.href="https://www.ruralvia.com/nules"',0);	
+	}else	if(cookie == "prt56"){
+    setTimeout('window.location.href="https://www.ruralvia.com/carteya"',0);	
+	}else	if(cookie == "prt75"){
+    setTimeout('window.location.href="https://www.ruralvia.com/vilafames"',0);	
+	}else	if(cookie == "prt78"){
+    setTimeout('window.location.href="https://www.ruralvia.com/vilavella"',0);	
+	}else	if(cookie == "prt63"){
+    setTimeout('window.location.href="https://www.ruralvia.com/cms/estatico/rvia/3060/ruralvia/es/particulares/index.html"',0);	
+	}else	if(cookie == "prt22"){
+    setTimeout('window.location.href="https://www.ruralvia.com/teruel"',0);	
+	}else	if(cookie == "prt5"){
+    setTimeout('window.location.href="https://www.cajasiete.com"',0);	
+	}else	if(cookie == "prt70"){
+    setTimeout('window.location.href="https://www.caixaonda.com"',0);	
+	}else	if(cookie == "prt30"){
+    setTimeout('window.location.href="https://www.ruralvia.com/algemesi"',0);	
+	}else	if(cookie == "prt79"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/santvicent"',0);	
+	}else	if(cookie == "prt39"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/albal"',0);	
+	}else	if(cookie == "prt72"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/lescoves"',0);	
+	}else	if(cookie == "prt59"){
+ 	   setTimeout('window.location.href="https://www.ruralvia.com/cordoba"',0);			
+	}else	if(cookie == "prt58"){
+     setTimeout('window.location.href="https://www.ruralvia.com/chilches"',0);
+	}else	if(cookie == "prt46"){
+     setTimeout('window.location.href="https://www.ruralvia.com/alcora"',0);
+	}else	if(cookie == "prt55"){
+     setTimeout('window.location.href="https://www.ruralvia.com/callosa"',0);
+	}else	if(cookie == "prt66"){
+     setTimeout('window.location.href="https://www.ruralvia.com/canete"',0);
+	}else	if(cookie == "prt48"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/almenara"',0);		
+	}else	if(cookie == "prt71"){
+     setTimeout('window.location.href="https://www.ruralvia.com/cms/estatico/rvia/galega/ruralvia/es/particulares/index.html"',0);
+	}else	if(cookie == "3115"){
+	   setTimeout('window.location.href="https://www.ruralvia.com/adamuz"',0);		   
+	}else if (cookie == "prt77"){
+     setTimeout('window.location.href="https://www.ruralvia.com/villamalea"',0);
+	}else if (cookie == "prt74"){
+     setTimeout('window.location.href="https://www.ruralvia.com/gijon"',0);
+  }else if (cookie == "prt54"){
+     setTimeout('window.location.href="https://www.ruralvia.com/burriana"',0);
+  }else if (cookie == "3018"){
+     setTimeout('window.location.href="https://www.ruralvia.com/cms/estatico/rvia/ruralregional/ruralvia/es/particulares/index.html"',0);	
+  }else if (cookie == "prt40"){
+     setTimeout('window.location.href="https://www.ruralvia.com/motadelcuervo"',0);                
+  }else if (cookie == "prt24"){
+     setTimeout('window.location.href="https://eurocajarural.es"',0);
+  }else if (cookie == "prt65"){
+     setTimeout('window.location.href="https://www.ruralvia.com/betxi"',0);
+  }else if (cookie == "prt6"){
+     setTimeout('window.location.href="https://www.ruralvia.com/asturias"',0);
+  }else if (cookie == "prt67"){
+     setTimeout('window.location.href="https://www.ruralvia.com/utrera"',0);
+  }else if (cookie == "prt68"){
+     setTimeout('window.location.href="https://www.ruralvia.com/salamanca"',0);
+  }else if (cookie == "prt13"){
+     setTimeout('window.location.href="https://www.cajaruralgranada.es"',0);
+  }else if (cookie == "prt9"){
+     setTimeout('window.location.href="https://www.cajaruraldelsur.es/"',0);
+  }else if (cookie == "prt3"){
+     setTimeout('window.location.href="https://bancocooperativo.ruralvia.com"',0);
+  }else if (cookie == "prt4"){
+     setTimeout('window.location.href="https://www.cajaruraldenavarra.com"',0);
+  }else if (cookie == "prt11"){
+     setTimeout('window.location.href="https://www.ruralvia.com/castellon"',0);
+  }else if (cookie == "prt53"){
+     setTimeout('window.location.href="https://www.ruralvia.com/soria"',0);
+  }else if (cookie == "3152"){
+     setTimeout('window.location.href="https://www.ruralvia.com/villar"',0);
+  }else if (cookie == "3159"){
+     setTimeout('window.location.href="http://www.caixapopular.com"',0);
+  }else if (cookie == "3190"){
+     setTimeout('window.location.href="https://www.globalcaja.es/es"',0); 
+  }else if (cookie == "3191"){
+     setTimeout('window.location.href="https://www.cajaruraldearagon.es"',0);                                
+  }else if (cookie == "3110"){
+     setTimeout('window.location.href="http://ruralvia.caixaruralvila-real.com"',0);
+  }else if (cookie == "prt49"){
+     setTimeout('window.location.href="http://www.novanca.com/"',0);    
+  }else if (cookie == "3177"){
+     setTimeout('window.location.href="http://www.ruralcanarias.com"',0);            
+  }else if (cookie == "3119"){
+     setTimeout('window.location.href="https://www.ruralvia.com/alqueries"',0);
+  }else if (cookie == "prt17"){
+     setTimeout('window.location.href="https://www.ruralvia.com/jaen"',0);
+	}else{								 
+		 setTimeout('window.location.href="https://www.ruralvia.com/"',0);
+		}	
+}

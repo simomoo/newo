@@ -1,0 +1,1633 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600);
+/********************* ESTILOS INICIALES QUE LIMPIAN ESTILOS DE NAVEGADORES Y LOS IGUALAN *********************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+*.hidden{
+    display: none!important;
+}
+
+:focus {
+    outline: 0;
+}
+
+body {
+    line-height: 1;
+    color: #333333;
+    background: white;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+
+/* table {
+    border-collapse: separate;
+    border-spacing: 0;
+} */
+
+caption,
+th,
+/* td {
+    text-align: left;
+    font-weight: normal;
+} */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+/****************** FIN DE ESTILOS INICIALES QUE LIMPIAN ESTILOS DE NAVEGADORES Y LOS IGUALAN ******************/
+
+html {
+    font-size: 62.5%;
+    font-family: Open Sans, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+/*con este porcentaje 1em corresponde a 10px*/
+/**************************************ESTILOS PARA PANTALLA DE ACCESO*************************************************/
+
+.site--title {
+    font-size: 0;
+    color: transparent;
+    line-height: 0;
+}
+
+.site--logo {
+    display: block;
+    background: url(./img/mantenimiento/logo-ruralvia-mantenimiento.svg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: 50%;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+#caja_acceso #form_acceso #oculto,
+#caja_acceso #form_acceso .oculto {
+    display: none;
+}
+
+.rojo {
+    color: #EB4D49;
+}
+
+#caja_acceso {
+    background-color: #FFFFFF;
+    height: 45em;
+    color: #666666;
+    margin: auto;
+    width: 78.4em;
+    padding: 10em;
+}
+/* MODIFICACION 210910, para corregir el acceso pin IE6 */
+
+/* #caja_acceso.acceso_admin {
+    height: 37.7em;
+    margin: -21em -10.5em;
+    width: 28em;
+} */
+
+#caja_acceso.sgth {
+    height: 31em;
+    margin: -15.5em -33.75em;
+}
+
+#caja_acceso a {
+    color: #007657;
+}
+
+#caja_acceso a:hover {
+    text-decoration: none;
+}
+/*******PARTE DE ARRIBA*****/
+
+#arriba {
+    float: left;
+}
+
+#caja_acceso #form_acceso {
+    border: none;
+    height: 33em;
+    float: left;
+    padding-bottom: 1em;
+    width: 32em;
+}
+
+#caja_acceso.sgth #form_acceso {
+    border: none;
+    padding: 3em 0 0 0;
+    height: 27em;
+}
+
+#caja_acceso #form_acceso h1,
+#caja_acceso h1 {
+   background-image: url(img/logo_rvia.png);
+   background-repeat: no-repeat;
+   height: 8em;
+   margin: 0 0 0 7em;
+   overflow: hidden;
+   position: relative;
+   text-indent: -100em;
+   width: 21em;
+}
+
+#caja_acceso #form_acceso h1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+#caja_acceso #form_acceso legend {
+    margin: 0 0 1.2em;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: .8em 1em;
+    width: 18em;
+    font-size: 1.6em;
+    position: relative;
+    font-weight: 200;
+}
+
+#caja_acceso #form_acceso label {
+    clear: both;
+    float: left;
+    padding-left: 1em;
+    font-size: 1.4em;
+    font-weight: 200;
+    width: 8.25em;
+    line-height: 2.75em;
+}
+
+#caja_acceso #form_acceso label.acc_dir {
+    width: 8em;
+}
+
+#caja_acceso #form_acceso #acceso_directo,
+#caja_acceso #form_acceso #acceso_directo_dni {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    width: 15.05em;
+}
+
+#caja_acceso #form_acceso #acceso_directo,
+#caja_acceso #form_acceso #acceso_directo_dni {
+    width: 14.55em;
+}
+/********************* menu desplegable "acceso directo" ********************/
+
+#caja_acceso #form_acceso input.acceso_directo_select,
+#caja_acceso #form_acceso input.acceso_directo_dni_select {
+    display: none;
+}
+
+#caja_acceso #form_acceso #acceso_directo_select,
+#caja_acceso #form_acceso #acceso_directo_dni_select {
+    background: transparent url(img/acceso_directo.gif) no-repeat scroll 0 0;
+    color: #666666;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    height: 1.55em;
+    line-height: 1.55em;
+    margin: 0.5em 0 .5em 1.2em;
+    text-indent: .5em;
+    width: 16.9em;
+}
+
+#caja_acceso #form_acceso #acceso_directo_select span,
+#caja_acceso #form_acceso #acceso_directo_dni_select span {
+    float: left;
+}
+
+#caja_acceso #form_acceso #acceso_directo_iconselectholder,
+#caja_acceso #form_acceso #acceso_directo_dni_iconselectholder {
+    background-color: #ffffff;
+    border: .1em solid #ADD957;
+    display: none;
+    float: left;
+    font-size: 1.1em;
+    margin: -.5em 0 0 1.2em;
+    position: absolute;
+    width: 16.4em;
+    z-index: 4;
+}
+
+#caja_acceso #form_acceso #acceso_directo_dni_iconselectholder {
+    margin: 4.55em 0 0 -17.75em
+}
+
+#caja_acceso #form_acceso #acceso_directo_iconselectholder,
+#caja_acceso #form_acceso #acceso_directo_dni_iconselectholder {
+    /*hack para navegadores no ie7 e inferiores*/
+    margin: 9.8em 0 0 1.2em;
+    width: 16.7em;
+}
+
+.acceso_directo_selectitems,
+.acceso_directo_dni_selectitems {
+    color: #777777;
+    display: inline;
+    float: left;
+    line-height: 1.5em;
+    padding-bottom: .25em;
+    text-indent: .5em;
+    width: 100%;
+}
+
+.acceso_directo_selectitems img,
+.acceso_directo_dni_selectitems img {
+    display: none;
+}
+
+#caja_acceso #form_acceso #acceso_directo_select img,
+#caja_acceso #form_acceso #form_acceso .acceso_directo_selectitems img,
+#caja_acceso #form_acceso #acceso_directo_dni_select img,
+#caja_acceso #form_acceso #form_acceso .acceso_directo_dni_selectitems img {
+    display: none;
+}
+
+selectoptions {
+    float: left;
+}
+
+.hoverclass {
+    background-color: #eeffcc;
+    cursor: pointer;
+}
+
+.selectedclass {
+    background-color: #c1e874;
+}
+/**************** fin menu desplegable "acceso directo" *************************/
+/*
+#caja_acceso #form_acceso input.entrar {
+    background: url(img/boton_volver.jpg) no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #666666;
+    cursor: pointer;
+    font-weight: 900;
+    height: 2.2em;
+    margin: .35em 0 .35em 11.5em;
+    padding: 0;
+    width: 5.55em;
+} */
+
+/*  #caja_acceso #form_acceso input.entrar {
+    hack para navegadores no ie7 e inferiores
+    font-size: 17px;
+    margin: .35em 0 .35em 9.5em;
+    width: 5.65em;
+} */
+
+#caja_acceso #form_acceso input.entrar:hover {
+    background: transparent url(img/boton_volver_h.jpg) no-repeat scroll 0 0;
+}
+
+#caja_acceso #form_acceso input.entrar:active {
+    background: transparent url(img/boton_volver_a.jpg) no-repeat scroll 0 0;
+}
+/*FORMULARIO*/
+
+#caja_acceso form {
+    padding-top: .25em;
+}
+
+#caja_acceso form fieldset {
+    padding-bottom: .5em;
+    background-color: #ffffff;
+    border-bottom: 0;
+}
+
+#arriba .recordar,
+#arriba .recordar_dni {
+    margin: 1em 1.5em;
+    font-size: 1.2em;
+    padding: .2em 0 1em;
+    z-index: 1;
+    position: relative;
+}
+
+#arriba .recordar a,
+#arriba .recordar_dni a {
+   color: #333333;
+}
+/*contenido_uno*/
+
+#arriba #contenido_uno {
+    float: left;
+    height: 31em;
+    padding: 0 0 0 1em;
+    margin: 8em 0 0 2em;
+    width: 38em;
+}
+
+#arriba #contenido_uno .titulo_seguridad {
+    color: #333333;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 0 0 1em;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+#arriba #contenido_uno ul {
+    /*hack que leen todos menos ie*/
+    margin: 0;
+    padding: 1em 0 .5em 2em;
+}
+
+#arriba #contenido_uno li {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    list-style-image: url(img/atencion.jpg);
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0 0 .25em;
+    list-style: outside url(img/icono_alerta.png) none;
+    font-weight: 600;
+    padding: 0;
+}
+
+#contenido_uno span {
+    /*Hay estilo incrustado en el html*/
+    color: #EB4D49!important;
+}
+
+#arriba #contenido_uno .titulo_recuerde {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 1.1em 0 0;
+    padding: 0;
+}
+
+/*Esta regla se matiene para que el texto de abajo use el estilo que usa*/
+#arriba #contenido_uno p {
+    color: #666666;
+    font-size: 1.2em;
+    margin: .6em 0 0;
+    line-height: 1.4em;
+}
+/**********PARTE DE ABAJO**************/
+
+#abajo {
+    float: left;
+}
+
+#abajo #contenido_dos {
+    border-right: .1em dotted;
+    float: left;
+    margin-top: 2.2em;
+    padding-right: 1em;
+    width: 32em;
+}
+
+#abajo #contenido_dos ul {
+    list-style: disc inside;
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+#abajo #contenido_dos ul li {
+    line-height: 1.4em;
+}
+/*PUBLICIDAD*/
+
+#abajo #contenido_tres a.nov_acc {
+    background: url(img/candado.png) no-repeat;
+    float: left;
+    height: 11em;
+    overflow: hidden;
+    text-indent: -10em;
+    width: 9em;
+}
+
+#abajo #contenido_tres a.nov_acc:hover {
+    background: url(img/alerta.png) no-repeat;
+}
+
+#abajo #contenido_tres ul {
+    float: left;
+}
+
+#abajo #contenido_tres li {
+    background: transparent url(img/puntocandado.gif) no-repeat scroll 0 50%;
+    color: #666666;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 2.4em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 2.5em;
+}
+
+#abajo #boton_demomas a {
+    background-image: url(img/botmasinfo.jpg);
+    color: #666666;
+    display: block;
+    float: left;
+    font-size: 1.1em;
+    font-weight: 700;
+    height: 2.7em;
+    line-height: 2.8em;
+    margin: 1em 0 0 4em;
+    text-align: center;
+    text-decoration: none;
+    width: 11em;
+}
+
+#abajo #boton_demomas a:hover {
+    color: #333333;
+    background-image: url(img/botmasinfo_h.jpg);
+}
+
+#abajo #contenido_dos img {
+    float: left;
+    margin-right: .5em;
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+#abajo #contenido_tres img {
+    float: left;
+    margin-right: .5em;
+}
+
+#abajo #contenido_dos p.titulo_publi {
+    color: #007657;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 1.2em 0 .5em;
+}
+
+#abajo #contenido_dos p {
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 .5em;
+}
+
+#abajo #boton_demo {
+    margin: 1.5em 0 0 0;
+}
+
+#abajo #boton_demo a:link,
+#abajo #boton_demo a:visited {
+    background-image: url(img/boton_demo.jpg);
+    font-size: 1.1em;
+    font-weight: 700;
+    height: 1.6em;
+    margin: 1em 0 0 4em;
+    padding: .75em 1em;
+    text-decoration: none;
+    color: #666666;
+}
+
+#abajo #boton_demo a:hover {
+    background-image: url(img/boton_demo_h.jpg);
+    font-size: 1.1em;
+    font-weight: 700;
+    height: 1.6em;
+    margin: 1em 0 0 4em;
+    padding: .75em 1em;
+    text-decoration: none;
+}
+
+#abajo #boton_demo a:active {
+    background-image: url(img/boton_demo_a.jpg);
+    font-size: 1.1em;
+    font-weight: 700;
+    height: 1.6em;
+    margin: 1em 0;
+    padding: .75em 1em;
+    text-decoration: none;
+}
+/*CONTENIDO TRES*/
+
+#abajo #contenido_tres {
+    border-top: 0.1em dotted;
+    float: left;
+    margin: 0 0 0 1em;
+    padding: .5em 0 0;
+    width: 44em;
+}
+
+#abajo #contenido_tres a {
+    color: #007657;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#abajo #contenido_tres p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 0 0 .8em;
+    text-align: left;
+}
+/***********TECLADO VIRTUAL*************************/
+
+#keyboardInputMaster {
+    background-color: #333333;
+    color: #333333;
+    height: 10.4em;
+    text-align: center;
+    width: 30.8em;
+    z-index: 1000000;
+}
+
+#keyboardInputLayout {
+    margin: .4em;
+}
+#keyboardInputLayout table td{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-family: 'Open Sans', monospace;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: .45em .75em .65em .55em;
+    /* vertical-align: middle; */
+    /* white-space: pre; */
+    border: 1px solid #E8E8E8;
+}
+
+#keyboardInputLayout table .TeclaNormalHover,
+#keyboardInputLayout table .xTeclaNormalHover,
+#keyboardInputLayout table .Hover {
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Open Sans', monospace;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: .45em .75em .65em .55em;
+    /* vertical-align: middle; */
+    white-space: pre;
+    border: 1px solid #333333;
+}
+
+#keyboardInputMaster thead tr td span.pressed,
+#keyboardInputLayout table .TeclaNormalPressed,
+#keyboardInputLayout table .xTeclaNormalPressed,
+#keyboardInputLayout table .TeclaNormalHoverPressed,
+#keyboardInputLayout table .xTeclaNormalHoverPressed,
+#keyboardInputLayout table td:active {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#keyboardInputLayout table .LastComun,
+#keyboardInputLayout table .xLastComun {
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    width: 100%;
+}
+
+#keyboardInputLayout table .DeadxLastComun,
+#keyboardInputLayout table .xDeadxLastComun {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+#keyboardInputLayout table .LastComunHover,
+#keyboardInputLayout table .xLastComunHover,
+#keyboardInputLayout table .HoverxLastComun,
+#keyboardInputLayout table .HoverxLastComunxPressed,
+#keyboardInputLayout table .xLastComunHoverPressed,
+#keyboardInputLayout table .xLastComunPressed,
+#keyboardInputLayout table .LastComunPressedHover {
+    text-align: center;
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#keyboardInputLayout table .HoverxDeadxLastComun,
+#keyboardInputLayout table .xDeadxLastComunHover {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+#keyboardInputLayout table .LastComunPressed,
+#keyboardInputLayout table .LastComunHoverPressed,
+#keyboardInputLayout table .HoverxLastComunPressed {
+    text-align: center;
+    padding: 0 0 0 .1em;
+    width: 100%;
+}
+
+#keyboardInputLayout table .DeadxHoverLastComunPressed,
+#keyboardInputLayout table .xDeadxHoverLastComunPressed,
+#keyboardInputLayout table .xDeadxLastComunPressed,
+#keyboardInputLayout table .DeadxLastComunPressed,
+#keyboardInputLayout table .HoverxDeadxLastComunPressed,
+#keyboardInputLayout table .DeadxLastComunHoverPressed,
+#keyboardInputLayout table .xDeadxLastComunHoverPressed {
+    color: #ffffff;
+    text-align: center;
+    padding: 0 0 0 .1em;
+    width: 100%;
+}
+
+#keyboardInputLayout table .LastLimpiar {
+    background-color: #66CC10;
+    text-align: center;
+    padding: 0 0 .2em;
+    width: 100%;
+}
+
+#keyboardInputLayout table .LastLimpiarPressed,
+#keyboardInputLayout table .LastLimpiarHoverPressed {
+    text-align: center;
+    padding: 0 0 0 .1em;
+    width: 100%;
+}
+
+#keyboardInputLayout table .LastLimpiarHover {
+    text-align: center;
+    padding: 0 0 .2em;
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#keyboardInputLayout table .LastAceptar {
+    /*background:transparent url(img/btn_teclado_aceptar.gif) no-repeat;
+   */
+    color: #ffffff;
+    text-align: center;
+    padding: 0 .85em .2em;
+    width: 100%;
+    background-color: #66CC10;
+}
+
+#keyboardInputLayout table .LastAceptarHoverPressed {
+    color: #ffffff;
+    text-align: center;
+    padding: 0 .75em 0 .95em;
+    width: 100%;
+}
+
+#keyboardInputLayout table .LastAceptarHover {
+    color: #ffffff;
+    text-align: center;
+    padding: 0 .85em .2em;
+    width: 100%;
+    background-color: #66CC10;
+}
+/********ACCESO DNIE**********/
+
+#caja_acceso #form_acceso.dni h1 {
+    margin-top: -4em;
+}
+
+#caja_acceso #form_acceso.dni form {
+    margin: 0;
+    padding: 0;
+    height: 25em;
+}
+
+#caja_acceso #form_acceso.dni legend {
+    margin: 0;
+}
+
+#form_acceso.dni #acceso_normal p.selec_acceso,
+#form_acceso.dni #acceso_dni p.selec_acceso {
+    border-top: 2em solid #FFFFFF;
+    margin-top: -2em;
+}
+
+#form_acceso p.selec_acceso {
+    float: left;
+    padding-top: .5em;
+    width: 100%;
+}
+
+#form_acceso #acceso_dni p.selec_acceso {
+    height: 2.3em;
+}
+
+#caja_acceso #form_acceso.dni p.selec_acceso_dni {
+    border-top: .5em solid #FFFFFF;
+    float: left;
+    width: 100%;
+}
+
+#caja_acceso #form_acceso.dni #acceso_normal p.selec_acceso_dni {
+    border-top: .5em solid #FFFFFF;
+    float: left;
+    margin-bottom: -.6em;
+    height: 2.6em;
+    width: 100%;
+}
+
+#caja_acceso #form_acceso.dni #acceso_normal p.selec_acceso_dni {
+    margin-bottom: 0;
+}
+
+#caja_acceso #form_acceso.dni #acceso_dni p.selec_acceso_dni {
+    margin-bottom: .75em;
+}
+
+#caja_acceso #form_acceso.dni p.selec_acceso input,
+#caja_acceso #form_acceso.dni p.selec_acceso_dni input {
+    background: none;
+    float: left;
+    margin: 0 .5em;
+    width: 1.5em;
+}
+
+#caja_acceso #form_acceso.dni p.selec_acceso label {
+    line-height: 1.5em;
+    padding: 0;
+    width: auto;
+    clear: none;
+}
+
+#caja_acceso #form_acceso.dni label {
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+#caja_acceso #form_acceso.dni label.acc_dir {}
+
+#caja_acceso #form_acceso.dni #acceso_directo_select,
+#caja_acceso #form_acceso.dni #acceso_directo_dni_select {
+    margin: .15em 0 .35em 1.2em;
+}
+
+#caja_acceso #form_acceso.dni p.selec_acceso_dni label {
+    line-height: 1.7em;
+    padding: 0;
+    width: auto;
+}
+
+#caja_acceso #form_acceso.dni input.entrar {
+    margin: .35em 0 .35em 11.5em;
+}
+
+#caja_acceso #form_acceso.dni input.entrar {
+    margin: .35em 0 .35em 8.8em;
+}
+
+#caja_acceso #form_acceso.dni input {
+    margin: .1em 0 .1em 2.9em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_normal p.selec_acceso_dni input {
+    margin-top: .8em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_normal p.selec_acceso_dni input {
+    margin-top: .5em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_dni p.selec_acceso_dni input {
+    margin-top: 1.3em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_dni p.selec_acceso_dni input {
+    margin-top: .7em;
+}
+
+#caja_acceso #form_acceso.dni p.selec_acceso_dni label {
+    margin-top: .5em;
+    clear: none;
+}
+
+#caja_acceso #form_acceso.dni #acceso_dni p.selec_acceso_dni label {
+    margin-top: 1em;
+}
+
+#caja_acceso #form_acceso.dni p.selec_acceso_dni a {
+    background: url(img/dni_e.jpg) no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 2.8em;
+    margin: 0.1em 0 0 1em;
+    overflow: hidden;
+    text-indent: -10em;
+    width: 4.6em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_dni p.selec_acceso_dni a {
+    margin-top: 0.5em;
+}
+
+#form_acceso.dni .recordar_dni {
+    float: left;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0 0 0 .5em;
+}
+
+#form_acceso.dni .recordar_dni p {
+    padding-top: .35em;
+}
+
+#caja_acceso #form_acceso #acceso_dni #acceso_directo_dni_select {
+    margin: .75em 0 .75em 1.2em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_directo_iconselectholder {
+    margin: 10.5em 0 0 1.2em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_directo_dni_iconselectholder {
+    margin: 2.25em 0 0 1.2em;
+}
+/************************************ACCESO ADMIN********************************/
+
+
+#caja_acceso.acceso_admin h1 {
+    background-position: center;
+    margin: 0 auto;
+    width: 27em;
+}
+
+#caja_acceso.acceso_admin legend {
+    margin: 0 0 1.2em;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: .8em 1em;
+    width: 18em;
+    font-size: 1.6em;
+    position: relative;
+    font-weight: 200;
+}
+
+#caja_acceso.acceso_admin label {
+    clear: both;
+    float: left;
+    padding-left: 1em;
+    font-size: 1.1em;
+    font-weight: 200;
+    width: 8.25em;
+    line-height: 2.75em;
+}
+
+#caja_acceso.acceso_admin input {
+    width: 155px;
+    margin: .5em 0;
+    height: 2em;
+    float: right;
+    line-height: 2em;
+    font-family: "Tahoma", sans-serif;
+}
+
+#caja_acceso.acceso_admin input.entrar {
+    background: #66CC10 none repeat scroll 0 0 !important;
+    border-bottom: .3em solid #5CB710;
+    box-shadow: 4px 4px 5px 0 rgba(209, 207, 209, 1);
+    clear: both;
+    color: #ffffff;
+    font-weight: 500;
+    height: 43px;
+    width: 319px !important;
+    border-radius: .4em;
+    margin: 0;
+    border: 0;
+    font-size: 17px;
+    float: left;
+    font-family: "Open Sans", sans-serif;
+}
+
+#caja_acceso.acceso_admin .selec_acc_dir select {
+    float: left;
+    font-size: 1.1em;
+    margin-left: -2.7em;
+    margin-top: .5em;
+}
+/************************************ACCESO ADMIN ESTILOS NUEVOS********************************/
+
+#caja_acceso.acceso_admin #form_acceso {
+    border: none;
+    width: 21em;
+}
+
+#caja_acceso.acceso_admin #form_acceso h1 {
+    margin: 0;
+}
+
+#caja_acceso #form_acceso h1.admin {
+    margin: -5em 0 0 0;
+    position: relative;
+}
+
+#caja_acceso #form_acceso form.admin legend {
+    border-bottom: 0.1em solid #FFFFFF;
+    display: inline;
+    margin-bottom: 1em;
+    padding: .5em 3.5em;
+    width: 8em;
+}
+
+#caja_acceso #form_acceso form.admin label {
+    line-height: 1em;
+    display: block;
+    float: none;
+    width: auto;
+}
+
+#caja_acceso #form_acceso form.admin input {
+    margin: .1em 0 .35em .7em;
+    padding: 0 .5em;
+    text-align: left;
+    width: 13.2em;
+}
+
+#caja_acceso #form_acceso form.admin input.entrar {
+    clear: both;
+    float: left;
+    margin: .5em 0 .5em 4.7em;
+    text-align: center;
+    width: 5.6em;
+}
+
+#caja_acceso #form_acceso form.admin label.acc_dir {
+    padding: 0 0 0 1em;
+}
+
+#caja_acceso #form_acceso form.admin #acceso_directo {
+    width: 15.8em;
+}
+
+#caja_acceso #form_acceso form.admin .selec_acc_dir {
+    float: left;
+    margin: .1em 0 .15em 1em;
+}
+
+#caja_acceso #form_acceso form.admin fieldset {
+    padding-bottom: .5em;
+}
+/********ERROR ACCESO**********/
+
+#error_acceso {
+    color: #666666;
+    font-size: 120%;
+    margin: 8em auto;
+    width: 40%;
+}
+
+#error_acceso p {
+    line-height: 1.4em;
+    padding: 0 .5em;
+}
+
+#error_acceso p.titulo {
+    background: transparent url(img/atencion.jpg) no-repeat scroll .5% 0;
+    border-bottom: .2em solid #eb4d49;
+    font-weight: 900;
+    margin-bottom: .5em;
+    padding: 0;
+    text-indent: 1.8em;
+}
+
+/**************NUEVOS ESTILOS*****************/
+/*
+#caja_acceso {
+    font-family: "Open Sans", sans-serif;
+    height: 33em;
+    margin: -26.5em -35.6em;
+}
+*/
+#alerta {
+    border: 0.1em solid #333333;
+    color: #333333;
+    margin: 1em 0 1.5em .5em;
+    padding: .5em 1em;
+    width: 90%;
+    float: left;
+    font-size: 1.1em;
+}
+
+#caja_acceso #form_acceso input:not([type="radio"]) {
+    border: 0.1em solid #666666;
+    color: #333333;
+    border-radius: 0.4em;
+}
+
+#caja_acceso #form_acceso #acceso_directo,
+#caja_acceso #form_acceso #acceso_directo_dni {
+    color: #333333;
+    border: .1em solid #333333;
+    cursor: pointer;
+}
+
+#caja_acceso #form_acceso input {
+    width: 155px;
+    margin: .5em 0;
+    height: 2em;
+    float: right;
+    line-height: 2em;
+    font-family: "Tahoma", sans-serif;
+}
+
+/* #contenido_uno {
+    background: url(../../css/img/publi_login_evo.jpg) no-repeat 50%;
+    border: none !important;
+    height: 33em !important;
+} */
+
+#abajo {
+    display: none;
+}
+
+#caja_acceso #form_acceso input.entrar {
+    background: #66CC10 none repeat scroll 0 0 !important;
+    border-bottom: .3em solid #5CB710;
+    box-shadow: 4px 4px 5px 0 rgba(209, 207, 209, 1);
+    clear: both;
+    color: #ffffff;
+    font-weight: 500;
+    height: 43px;
+    width: 319px !important;
+    border-radius: .4em;
+    margin: 0;
+    border: 0;
+    font-size: 17px;
+    float: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+#caja_acceso #form_acceso input.entrar:active {
+    background: #66CC10;
+    color: #ffffff;
+    border: 0;
+    text-shadow: 1px 0 0 #333333;
+    border-top: .3em solid #5CB710;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#caja_acceso #form_acceso .selec_acc_dir {
+    float: right;
+    margin: .5em 0 .25em 0;
+}
+
+#caja_acceso #form_acceso #acceso_directo,
+#caja_acceso #form_acceso #acceso_directo_dni {
+    width: 13.2em;
+    border-radius: .3em;
+    height: 2em;
+}
+/****dnie*****/
+
+#caja_acceso #form_acceso.dni p.selec_acceso label {
+    width: auto !important;
+}
+
+#caja_acceso #form_acceso.dni #acceso_normal p.selec_acceso_dni {
+    height: auto;
+}
+
+#caja_acceso #form_acceso.dni p.selec_acceso_dni a {
+    height: 3.1em;
+}
+
+#form_acceso.dni .recordar_dni {
+    margin-top: .35em;
+}
+
+#caja_acceso #form_acceso.dni #acceso_dni p.selec_acceso_dni input {
+    margin-top: 1.2em;
+}
+
+#caja_acceso #acceso_dni form fieldset {
+    padding-bottom: 1em;
+}
+
+#caja_acceso #form_acceso.dni form {
+    height: auto;
+}
+
+#caja_acceso #form_acceso.dni label {
+    font-size: 1.4em;
+    line-height: 2.75em;
+}
+
+#form_acceso.dni #acceso_normal p.selec_acceso,
+#form_acceso.dni #acceso_dni p.selec_acceso {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+#caja_acceso #form_acceso.dni input.entrar {
+    margin: 0;
+}
+
+#caja_acceso #form_acceso.dni input {
+    margin: .5em 0;
+}
+
+#caja_acceso #form_acceso.dni #acceso_normal p.selec_acceso_dni {
+    margin-top: 1em;
+}
+
+#form_acceso.dni .recordar_dni {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#form_acceso.dni #acceso_normal p.selec_acceso,
+#form_acceso.dni #acceso_dni p.selec_acceso {
+    border-top: 1.2em solid #ffffff;
+}
+
+#keyboardInputLayout table {
+    width: 100%;
+    /* display: block; */
+}
+
+#abajo {
+    margin-top: 7em;
+}
+
+/*Correcciones CSS Acceso contenido ingles*/
+
+#arriba .recordar a {
+    line-height: 30px
+}
+
+/* Css ojos login */
+#caja_acceso #form_acceso fieldset #ojoPass.icon-warning:after, #caja_acceso #form_acceso fieldset #ojoNif.icon-warning:after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    background-size: 100%;
+	background-image: url(../css/html5/img/ico-ocultar.svg);
+    background-repeat: no-repeat;
+    content: ' ';
+    top: 0px;
+}
+
+#caja_acceso #form_acceso fieldset #ojoPass.btn-default:after, #caja_acceso #form_acceso fieldset #ojoNif.btn-default:after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    background-size: 100%;
+    background-image: url(../css/html5/img/ico-mostrar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: ' ';
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#caja_acceso #form_acceso fieldset #ojoPass, #caja_acceso #form_acceso fieldset #ojoNif {
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    background-color: transparent !important;
+    text-indent: -9999px;
+	width: 10px;
+}
+
+#caja_acceso #form_acceso fieldset .botonOjo {
+    display: inline-block;
+}
+
+#caja_acceso #form_acceso div.input-login{
+    width: 155px;
+    margin: .5em 0;
+    border: 0.1em solid #666666;
+    border-radius: 0.4em;
+    float: right;
+    line-height: 2em;
+    padding: 1px 0;
+	padding-left: 1px;
+    font-family: "Tahoma", sans-serif;
+    height: auto;
+}
+
+#caja_acceso #form_acceso div.input-login input {
+    width: 122px;
+    height: 2em;
+    line-height: 2em;
+    font-family: "Tahoma", sans-serif;
+	border: none;
+	float: none;
+	margin: 0;
+}
+
+.select {
+    width: 158px;
+    border-radius: .3em;
+    height: 2em;
+    color: #333333;
+    border: .1em solid #333333;
+    cursor: pointer;
+    background: #FFF;
+}
+
+.box-two-sides {
+    display: flex;
+    min-height: 8em;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    margin: 16px 64px;
+    color: #333333;
+}
+
+.box-left-side {
+    padding: 16px 37px;
+    width: 40%;
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.box-left-side:before {
+    content: "";
+    display: flex;
+    width: 100%;
+    min-height: 34px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box-two-sides-sms .box-left-side:before {
+    background-image: url(images/img-doble-autenticacion.svg);
+}
+
+.box-right-side {
+    width: 60%;
+    padding: 16px 30px;
+    background: #f5f5f5;
+    border-left: 1px solid #cdcdcd;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 4em;
+}
+
+.btn-page-nav {
+    border: none;
+    border-radius: 5px;
+    text-shadow: none;
+    text-align: center;
+    display: block;
+    line-height: 1.65;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 13px;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    min-width: 110px;
+    cursor: pointer;
+}
+
+.btn-page-nav-primary {
+    color: #ffffff;
+    background: #66cc10;
+}
+
+.btn-page-nav-secondary {
+    color: #333333;
+    background: #b9b8b8;
+    font-weight: 600;
+}
+
+.box-two-sides .title {
+    font-size: 18px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.box-two-sides p {
+    font-size: 14px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin: 1em 0;
+    line-height: 1.2;
+}
+
+.sms-input input {
+    font-size: 28px;
+    padding: 1px 16px;
+    width: 147px;
+}
+
+.input-header {
+    margin-block-end: 0.5em;
+}
+
+.sms-input .delete-button {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: url(images/close.svg) no-repeat center;
+    background-size: contain;
+    right: 10px;
+    top: 12px;
+    visibility: hidden;
+}
+
+.sms-input {
+    position: relative;
+    margin-bottom: 1em;
+    display: inline-flex;
+}
+
+.sms-input-delete .delete-button {
+    visibility: visible;
+}
+
+.underline {
+    font-weight: 600;
+    border-bottom: 2px dotted #66cc10;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-container {
+    background: white;
+    min-height: 20em;
+    padding: 2em;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.modal-exit {
+    width: 16px;
+    height: 16px;
+    background: url(images/close.svg) no-repeat center;
+    background-size: contain;
+    float: right;
+}
+
+.modal-title {
+    color: #66cc11;
+    font-size: 16px;
+    font-weight: 600;
+    margin-block-start: 0.83em;
+    margin-block-end: 1.83em;
+    margin: 1.83em 0 0.83em 0;
+}
+
+.modal-title.question-title:before {
+    content: "";
+    background: url(images/ayuda.svg) no-repeat center;
+    background-size: contain;
+    padding: 13px;
+    margin-right: 1em;
+}
+
+.modal-body {
+    margin: 40px;
+}
+
+.modal-text {
+    font-size: 14px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin: 1em 0;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.title-container {
+    border-bottom: 1px solid #979797;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.main-title {
+    color: #7ed321;
+    font-size: 22px;
+    font-weight: 600;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.title-extra {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 14px;
+}
+
+.info-button {
+    background: url(images/ayuda.svg) no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:776px) {
+	.ruralvia-login .site--logo {
+		margin: 0 auto 0.5em auto;
+		height: 6.75em;
+	}
+}
+
+@media screen and (min-width:728px) and (max-width: 775px) {
+	.ruralvia-login .site--logo {
+		height: 7em;
+	}
+}
+
+@media screen and (max-width: 727px) {
+    .ruralvia-login .site--logo {
+		height: 6em;
+	}
+}
+
+/* --- Mensajes en linea --- */
+.inline-message {
+	background: white;
+	border: 1px solid #56badb;
+	border-radius: 4px;
+	display: table;
+	margin: 16px 0;
+	width: 100%;
+	padding: 16px 8px;
+}
+
+.inline-message .inline-message-text {
+	display: table-cell;
+	position: relative;
+	top: -3px;
+}
+
+.inline-message .inline-message-text p {
+	padding: 0;
+	margin: 0 0 5px;
+	font-size: 14px;
+}
+
+.inline-message .inline-message-text p:last-child {
+	margin-bottom: 0;
+}
+
+.inline-message--title {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+
+.inline-message .inline-message-icon {
+	display: table-cell;
+	width: 40px;
+	height: 25px;
+	position: relative;
+}
+
+.inline-message .inline-message-icon:before {
+	background-repeat: no-repeat;
+	content: " ";
+	width: 25px;
+	height: 25px;
+    position: absolute;
+    top: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+.inline-message .inline-message-icon--info:before {
+	background-color: #56badb;
+	-webkit-mask-image: url(../css/html5/css/images/icons/icon-info.svg);
+	mask-image: url(../css/html5/css/images/icons/icon-info.svg);
+	-webkit-mask-size: contain;
+	mask-size: contain;
+}
+
+.inline-message-warning {
+	border-color: #ffb050;
+}
+
+.inline-message-info {
+	border-color: #56badb;
+}
+
+.inline-message-error {
+	border-color: #eb4d49;
+}
+
+.inline-message-success {
+	border-color: #66cc10;
+}

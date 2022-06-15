@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo
+{
+	font-size: 16px;
+	font-family:tahoma;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	clear: both;
+	color: #555555;
+	text-align: center;
+}
+
+.texto
+{
+   padding: 10px 30px 20px 0px;
+   text-align: left;
+}
+
+.margenRecuerde
+{
+	padding-top: 10px;
+	clear: both;
+	text-align: left;
+}
+
+#form_acceso
+{
+    background-color: #D6DBE0;
+    float: left;
+    padding: 10px;
+}
+
+
+.cajaFirma
+{
+	width: 600px;
+	float: left;
+	clear: both; /* Sólo se añade para que funcione bien el estilo en IE*/
+}
+
+
+.tablaFormulario
+{
+	width: 350px;
+	font-family:tahoma;
+	font-size:11px;
+	color:#666;
+}
+
+.tablaFormulario tr
+{
+	height: 20px;
+}
+
+.botones
+{
+	clear: both;
+	width: 500px;
+	padding-top: 10px;
+	float: left; /*  IE  */
+	text-align: center;
+}
+
+.contenedor
+{
+	margin-left: 30px;
+	text-align: left;
+	color: #555555;
+   	font-family: tahoma,verdana,arial,Helvetica,sans-serif;
+   	font-size: 11px;
+}
+
+.imagenContenedor
+{
+	float: left;
+	margin-right: 10px;
+	height: 130px;
+	display: table;
+
+}
+
+.imagenCandado
+{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+#CENTRAR  
+{
+	position: relative; 
+	width: 680px; 
+	border: 0px solid #CC0000;
+	margin: auto;
+}
+
+#LINEA-HEADER 
+{
+    border-bottom: 0.1em solid #007856;
+    clear: both;
+    margin: 10px 0 0;
+    width: 100%;
+	font-size: 11px;
+}
+
+
+#ERROR_HEADER 
+{
+    background: url("/img/error.gif") no-repeat scroll 0 0 transparent;
+    border-bottom: 2px solid #CC0000;
+    height: 20px;
+}
+
+
+#ERROR_HD
+{
+    border: 0 solid #000000;
+    font-family:tahoma;
+    font-size: 10px;
+    height: 16px;
+    margin-left: 25px;
+    margin-top: 6px;
+    text-align: left;
+}
+
+#BODY_ERROR {
+	padding:4px;
+	margin-top:4px; 
+}
+
+#PORTLET-ERROR  
+{
+	background-color: #FFFFFF; 
+	width:450px; 
+	height:100%; 
+	float:left;  
+	margin-top: 5em;
+	margin-left: 0.5em;
+}
+
+#FOOTER		
+{
+	width:100%; 
+	height: 25px; 
+	padding-right: 5px; 
+	margin-top:10px; 
+	border: 0px solid #000000;
+}
+
+#BOT
+{
+	float:right; 
+	height: 14px; 
+	padding-left:10px;
+}
+
+#BOT a:link 
+{ 
+	font-size: 11px; 
+	font-family:tahoma;
+	color: #000000; 
+	background: #E2E7E7; 
+	font-weight: regular; 
+	text-align: center; 
+	vertical-align: middle; 
+	margin: 1px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	padding-bottom: 3px; 
+	padding-top: 1px; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #C8D1D1 #404040 #404040 #C8D1D1; 
+	height: 14;
+	text-decoration: none;
+}
+
+#BOT a:visited	
+{
+	font-size: 11px;
+	font-family:tahoma;	
+	color: #000000; 
+	background: #E2E7E7; 
+	font-weight: regular; 
+	text-align: center; 
+	vertical-align: middle; 
+	margin: 1px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	padding-bottom: 3px; 
+	padding-top: 1px; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #C8D1D1 #404040 #404040 #C8D1D1; 
+	height: 14;text-decoration: none;
+}
+#BOT a:active 	
+{
+	font-size: 11px; 
+	font-family:tahoma;
+	color: #000000; 
+	background: #E2E7E7; 
+	font-weight: regular; 
+	text-align: center; 
+	vertical-align: middle; 
+	margin: 1px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	padding-bottom: 3px; 
+	padding-top: 1px; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #C8D1D1 #404040 #404040 #C8D1D1; 
+	height: 14;
+	text-decoration: none;
+}
+#BOT a:hover 
+{
+	font-size: 11px; 
+	font-family:tahoma;
+	color: #004539; 
+	background: #FFFFFF; 
+	font-weight: regular; 
+	text-align: center; 
+	vertical-align: middle; 
+	margin: 1px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	padding-bottom: 3px; 
+	padding-top: 1px; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #C8D1D1 #404040 #C8D1D1 #404040; 
+	height: 14; 
+	text-decoration: none;
+}
+
+body
+{
+	width: 100%;
+	margin: auto;
+}
+
+.txtaviso 
+{
+	font-size: 11px; 
+	font-family:tahoma;
+	color: #000000; 
+	text-align: left; 
+	margin:5px;
+	padding: 4px;
+}
+
+.centrarIE
+{
+	text-align: center;
+}

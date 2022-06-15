@@ -1,0 +1,95 @@
+div#form_acceso {
+    background-color: transparent;
+    padding: 0px;
+    margin: 40px auto auto 0px;
+}
+
+div#recuadro{
+    background-color: #F5F5F8;
+    width: 726px;
+    height: 637px;
+    float: left;
+    box-shadow: 0 0 11px -4px rgba(0,0,0,0.5);
+}
+
+div#CENTRAR{
+    width:978px;
+}
+
+div.contenedor{
+    float: left;    
+}
+
+input.entrar{
+    color: #ffffff;
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 13.7px;
+    font-weight: 600;
+    padding: 1em;
+    width: 337px;
+    max-width: 100%;
+    cursor: pointer;
+    width: 100%;
+}
+
+div.botones{
+    text-align:left;
+    width: 341px;
+}
+/*Acordarse de la funcionalidad y de que son radio buttons que tienen que cambiar al pinchar en un texto u otro*/
+input.inputradio{ 
+    display: none;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 7.5px 0 7.5px 0;
+    margin: 8px auto 8px auto;
+}
+
+div.imagenContenedor{
+    margin: 41px 40px auto 29px
+}
+
+div.titulo{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size:19px;
+    color: #272727;
+}
+
+div#LINEA-HEADER {
+    border-bottom: 2px solid #272727;
+}
+
+div.texto{
+    line-height: 25px;
+    font-size:13px;
+    color: #272727;
+}
+
+div.margenrecuerde{
+    margin-left:29px;
+    padding-top: 30px;
+    font-size: 13px;
+}
+
+div.texto a{
+    border-bottom: 2px dotted;
+    text-decoration: none;
+    color: #272727;
+}
+
+img.imagen_regenerar{
+    width:230px;
+    height:175px;
+}
+
+td b{
+    font-size: 15px;
+    font-weight: normal;
+    vertical-align: middle;
+    color: #272727;
+}

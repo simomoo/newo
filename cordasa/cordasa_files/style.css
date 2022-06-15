@@ -1,0 +1,6237 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600";
+/*************Fuente*************/
+
+body {
+    width: 100%;
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    margin: 0;
+}
+
+/* No borrar, trabaja contra estilo en línea */
+
+[style*="visibility:hidden"] {
+    visibility: hidden;
+}
+
+#RESOLUCION {
+    margin: 0 auto;
+    width: 990px;
+}
+
+/* PUBLICIDAD */
+
+#IMG {
+    float: left;
+    margin: 5px 10px 5px 0px;
+    text-align: center;
+    border: 1px solid #66CC10;
+}
+
+.rojo {
+    color: #eb4d49;
+}
+
+a.lista:link,
+a.lista:hover {
+    color: #0000CC;
+}
+a:link, a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+/* MENSAJES */
+
+.datoI_mensajes a {
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: solid 1px #66CC10;
+    margin-top: -1em;
+    position: relative;
+    background-color: #66CC10;
+}
+
+.datoI_mensajes a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+/*Se añade important para que no herede los estilos de ISUM*/
+.toolBar {
+    background-color: #e8e8e8!important;
+}
+#gco_EXPLICA {
+    width: 100%;
+    font-size: 1.1em;
+    color: #333;
+    margin: .5em 0;
+    text-align: left;
+    padding-left: 1.2em;
+    float: left;
+}
+#gco_HD_INPUT {
+    margin-top: 10px;
+}
+#gco_PORTLET-INPUT {
+    background-color: #fff;
+    width: 98%;
+    float: left;
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-bottom: 20px;
+}
+
+#gco_HEADER {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    height: 26px;
+    float: left;
+    padding-top: 7px;
+    padding-left: 0px;
+}
+
+#gco_HEADER_INPUT {
+    height: auto;
+    margin-top: 5px;
+}
+
+#gco_HD_INPUT {
+    float: left;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    height: 20px;
+}
+
+#gco_HD_BUSCADOR {
+    background: #fff;
+    margin-left: 0em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+    padding-left: 3px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #333;
+    text-align: right;
+}
+
+#gco_BODY_INPUT {
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    border: 1px solid #6fc100;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+.gco_datobl,
+.gco_datoI {
+    border-bottom: 0;
+    font-size: 12px;
+    font-weight: 200;
+    color: #333;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    vertical-align: top;
+}
+
+#gco_BOT a {
+    font-size: 12px;
+    color: #fff;
+    background: #6fc100;
+    font-weight: 100;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    padding: 5px 15px;
+    border-radius: 2px;
+    border: 1px solid #6fc100;
+    text-decoration: none;
+}
+
+#gco_BOT a:hover {
+    text-decoration: underline;
+}
+
+.gco_hPaginar {
+    background-color: #fff;
+    font-family: verdana;
+    font-size: 10px;
+    color: #333;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    float: right;
+}
+
+.gco_hPaginar a {
+    color: #333;
+    text-decoration: underline;
+}
+.gco_cblistaC a {
+    color: #fff;
+}
+.cblistaC,
+#simuladores .cblistaC,
+.gco_cblistaC {
+    background: #333;
+    font-size: 12px;
+    padding: 5px;
+    white-space: nowrap;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #999 #9999 #fff;
+    height: 18px;
+    text-decoration: none;
+}
+
+.gco_listaIconos {
+    padding-left: 2px;
+}
+
+.gco_listaBold {
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    vertical-align: middle;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.gco_listaNormal {
+    color: #333;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 2px 5px;
+}
+
+.gco_listaBoldSeleccionado {
+    font-size: 11px;
+    font-weight: bold;
+    color: #0000CC;
+    vertical-align: middle;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a.gco_lista {
+    color: #0000CC;
+    text-decoration: underline;
+}
+
+#gco_FOOTER {
+    float: left;
+    width: 100%;
+    height: 25px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+#gco_BOT {
+    float: right;
+    height: 35px;
+    padding-left: 10px;
+}
+
+/* FIN MENSAJES */
+
+/*************Cabecera***********/
+
+.link0 {
+    color: #333;
+    font-size: 11.5px;
+    text-decoration: none;
+}
+
+.link0:hover {
+    text-decoration: underline;
+}
+
+#LOGO {
+    background-image: url("img/logo_ruralvia.png");
+    background-repeat: no-repeat;
+    margin: 2em 0 0;
+    float: left;
+    width: 207px;
+    height: 65px;
+}
+
+#BARRALITERAL {
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    background-color: #fff;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    float: right;
+    width: 750px;
+}
+
+#CBLOGO img {
+    margin-top: 1em;
+}
+
+#contrato_tit {
+    left: 0px;
+    position: absolute;
+    top: 39px;
+}
+
+#contrato_tit p {
+    color: #333;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+p {
+    font-size: 12px;
+}
+
+#aviso {
+    font-size: 12px;
+    float: left;
+    width: 100%;
+}
+
+.bix {
+    color: #333;
+    font-weight: 200;
+    display: none;
+}
+
+#CBLITERAL01 {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#CBLITERAL01 {
+    visibility: visible;
+    float: right;
+}
+
+#CBLITERAL01 a {
+    display: inline-block;
+    background: url("img/btn_salir.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+
+#CBLITERAL01 a:hover {
+    background: url("img/btn_salir_hover.png") no-repeat;
+}
+
+#CBLITERAL01 a img {
+    display: none;
+}
+
+#CBLITERAL {
+    margin-top: 6px;
+    margin-right: 5px;
+    float: right;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+}
+
+#ENTORNO {
+    width: 750px;
+    float: right;
+    padding: 0px;
+    height: 30px;
+    margin-top: 7px;
+}
+
+#DESTACADOS {
+    background: url("img/flecha_verde.gif") no-repeat scroll 0 0.1em;
+    height: 14px;
+    padding-left: 12px;
+    margin-top: 2px;
+    text-align: right;
+    padding-right: 20px;
+    float: right;
+}
+
+#DESTACADOS a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+}
+
+#DESTACADOS a:hover {
+    text-decoration: underline;
+}
+
+#menuHorizontal {
+    margin-top: .5em;
+    width: 100%;
+    margin-left: 1px;
+    float: left;
+    clear: both;
+}
+#menuHorizontal table {
+    border: none !important;
+}
+
+.fondoMenu {
+    background: #fff;
+    /* Hay estilo incrustado en el html */
+    vertical-align: bottom !important;
+}
+
+#NOTAINFO {
+    background: #fff;
+    font-size: 11px;
+    border: 0.1em solid #999999;
+    color: #333;
+    padding: 0.8em;
+    width: 97.5%;
+    margin-top: 10px;
+    float: left;
+}
+#NOTAINFO,
+#simuladores #NOTAINFO {
+    font-size: 12px;
+    font-family: Open Sans;
+}
+
+#AVISO {
+    float: left;
+    background: #fff;
+    font-size: 10px;
+    color: #eb4d49;
+    padding-left: 10px;
+    width: 99%;
+    margin: .5em 0;
+}
+
+#AVISO a {
+    color: #333;
+}
+#PORTLET-INFO {
+    float: left;
+    background-color: #fff;
+    width: 98%;
+    margin-top: 0em;
+    margin-left: 0.5em;
+}
+#NOTAINFO .datoI {
+    background: #fff;
+}
+
+#PORTLET-AVISO	{
+    background-color: #FFFFFF; 
+    float:left;
+    width: 70%;
+    margin-top: 5em;
+    margin-left: 0.5em;
+}
+
+#PORTLET-SECTION-HEADER, #simuladores #PORTLET-SECTION-HEADER, #gco_PORTLET-SECTION-HEADER {
+    background: #fff;
+    padding: 11px 15px 14px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#HEADER_INFO {
+    height: 14px;
+    width: 100%;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    background: url(img/nota.gif) no-repeat;
+}
+#BODY_INFO {
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    margin-bottom: 1em;
+}
+#BODY_INFO .literal {
+    background: #fff;
+    padding: 3px 5px;
+}
+.tabliteral, .literal {
+    border-bottom: 0;
+    color: #333;
+    font-size: 12px;
+}
+#opcion {
+    font-family: "Open Sans", sans-serif;
+    background: none;
+    border-right: none;
+    border-bottom: none;
+    font-size: 1.2em;
+    border-radius: 0.3em 0.3em 0 0;
+    padding: 0;
+}
+
+#opcion a {
+    color: #666;
+    font-weight: 400;
+    text-decoration: none;
+    float: left;
+    background: #fff;
+    border: 0.1em solid #E8E8E8;
+    padding: 10px 6px;
+    border-radius: 0.3em 0.3em 0 0;
+}
+
+@media screen\9 {
+    #opcion a {
+        float: right;
+    }
+}
+
+#opcion a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.centroFin {
+    background: #66CC10;
+    color: #fff;
+    border-radius: 0.3em 0.3em 0 0;
+    border: 0.1em solid #66CC10;
+    padding: 10px 6px;
+    font-weight: 100;
+    font-size: 1.2em;
+    height: 1.45em;
+}
+
+.dchaFin,
+.izqFin {
+    display: none;
+}
+
+/*ICONOS CACBECERA*/
+/*config*/
+#IA_HDBOT a[onclick*="Listado"] {
+    background: url("img/configuracion.png") no-repeat center center;
+    background-size: 23px;
+}
+
+/*ayuda*/
+#HDBOT a[onclick*="ay"],
+#IA_HDBOT a[onmouseover*="ico_ay"] {
+    background: url("img/ico_ayuda.png") no-repeat center center;
+    background-size: 23px;
+}
+
+#HDBOT a:hover[onclick*="ay"],
+#IA_HDBOT a:hover[onclick*="ay"] {
+    background: url("img/ico_ayuda_hover.png") no-repeat center center;
+    background-size: 23px;
+}
+
+/*guardar*/
+
+#HDBOT a[onclick*="guardar"],
+#IA_HDBOT a[onclick*="guardar"] {
+    background: url("img/ico_guardar.png") no-repeat center center;
+    background-size: 23px;
+}
+
+#HDBOT a:hover[onclick*="guardar"],
+#IA_HDBOT a:hover[onclick*="guardar"]  {
+    background: url("img/ico_guardar_hover.png") no-repeat center center;
+    background-size: 23px;
+}
+
+/*Impresión*/
+
+#HDBOT a[onmouseover*="imp"],
+#IA_HDBOT a[onmouseover*="imp"]  {
+    background: url("img/ico_imprimir.png") no-repeat center center;
+    background-size: 23px;
+}
+
+#HDBOT a:hover[onmouseover*="imp"],
+#IA_HDBOT a:hover[onmouseover*="imp"]  {
+    background: url("img/ico_imprimir_hover.png") no-repeat center center;
+    background-size: 23px;
+}
+
+/*Excel*/
+
+#HDBOT a[onmouseover*="xls"],
+#HDBOT a[onmouseover*="xls"],
+#IA_HDBOT a[onmouseover*="xls"] {
+    background: url("img/excel.png") no-repeat center center;
+    background-size: 20px;
+}
+
+#IA_HDBOT a[onclick*="Xls"],
+#IA_HDBOT a#enlaceXls {
+    background: url("img/excel.png") no-repeat center center;
+    background-size: 20px;
+}
+
+#HDBOT a:hover[onmouseover*="xls"]{
+    background: url("img/excel_hover.png") no-repeat center center;
+    background-size: 20px;
+}
+
+/*PDF*/
+
+#IA_HDBOT a[onclick*="Pdf"], #IA_HDBOT a#enlacePdf {
+    background: url("img/pdf.png") no-repeat center center;
+    background-size: 23px;
+}
+
+#HEADER_XA,
+#IA_HEADER_XA {
+    height: 40px;
+    margin-top: 10px;
+    width: 70%;
+    float: left;
+}
+
+/*/////////////// MENU IZQUIERDA ///////////////*/
+
+.MENU2 {
+    margin-top: 10px;
+    background-color: #fff;
+    float: left;
+    margin-left: 0;
+    padding-left: 2px;
+    width: 175px;
+}
+
+.fondopciones {
+    background: none;
+    margin: 0;
+    width: auto;
+}
+
+.opcionsm2,
+.opciongm2,
+.opcionSm2 {
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+/*Dejar este estilo aparte*/
+
+.opcionSm2 {
+    border-bottom: 0.2em dotted #66CC10;
+    width: 100%;
+    font-size: 12.5px;
+    color: #333;
+}
+
+.subopcionm2,
+.subopcionm2S {
+    border-bottom: 1px dotted #999;
+    border-left: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    color: #333;
+}
+
+.subopcionm3,
+.subopcionm3S {
+    border-left: 0;
+    border-bottom: 1px dotted #999;
+    margin-left: 1.5em;
+}
+
+.opcionGm2 {
+    background: none repeat scroll 0 0;
+    border-bottom: 0.3em solid #66CC10;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12.5px;
+    padding: 6% 0;
+    width: 100%;
+    color: #333;
+}
+
+.opcionSm2 a {
+    font-weight: bold;
+    padding: 2% 6% 4% 3%;
+    width: 92%;
+    display: inline-block;
+    color: #333;
+    border-bottom: none;
+    font-size: 12.5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.opcionm2 a,
+.opcionGm2 a,
+.subopcionm2 a,
+.subopcionm2S a,
+.subopcionm2A a,
+.subopcionm2C a {
+    padding: 3.5px 17px 7px 5px;
+    width: 12.4em;
+    display: inline-block;
+    color: #333!important;
+    font-weight: normal;
+    border-bottom: none;
+    font-size: 12.5px;
+    text-decoration: none;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.subopcionm3 a,
+.subopcionm3S a {
+    padding: 2% 6% 4% 3%;
+    width: 92%;
+    display: inline-block;
+    color: #333333;
+    font-weight: normal;
+    border-bottom: none;
+    font-size: 12.5px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+
+
+.subopcionm2A a:first-child,
+.subopcionm2C a:first-child {
+    display: none;
+}
+
+.opcionm2 a:hover,
+.opcionSm2 a:hover,
+.opcionGm2 a:hover,
+.subopcionm2 a:hover,
+.subopcionm2S a:hover,
+.subopcionm2A a:hover,
+.subopcionm2C a:hover,
+.subopcionm3 a:hover,
+.subopcionm3S a:hover,
+.subopcionm2S a:visited,
+.subopcionm3S a:visited {
+    background: #e8e8e8;
+    color: #333;
+    text-decoration: none;
+}
+
+.subopcionm2, .subopcionm2S, .subopcionm2A, .subopcionm3, .subopcionm3S {
+    overflow: hidden;
+}
+
+.subopcionm2A {
+    border-bottom: 1px dotted #999;
+}
+
+.subopcionm2A a {
+    background: url("img/flecha_verde.gif") 95% no-repeat;
+}
+
+.subopcionm2C a {
+    background: url("img/flecha_verde_abajo.gif") 95% no-repeat #E8E8E8;
+}
+
+.subopcionm2A a:hover {
+    background: url("img/flecha_verde_abajo.gif") 95% no-repeat #E8E8E8;
+}
+
+.subopcionm2C a:hover {
+    background: url("img/flecha_verde.gif") 95% no-repeat #E8E8E8;
+}
+
+/*Menú Lateral Seleccionado*/
+
+.subopcionm2S a,
+.subopcionm3S a {
+    font-weight: 800;
+}
+
+/* MODULO IBEX 35 */
+
+.ifbPtablaTit {
+    height: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #66cc10;
+    border-bottom: 1px solid #66cc10;
+}
+
+.ifbPTablaIbex {
+    background: url("img/fndibex.jpg") no-repeat bottom;
+    width: 510px;
+    height: 160px;
+    margin-bottom: 16px;
+}
+
+.ifbPTitUlt {
+    color: #333;
+    font-weight: 100;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ifbIbGraf {
+    width: 275px;
+    text-align: center;
+    padding-top: 20px;
+    height: 135px;
+}
+
+.ifbPUlt {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #007657;
+}
+
+.ifbPTitUlt {
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ifbPdif_Bajan {
+    background: url("img/flbaja.jpg") no-repeat 110px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #eb4d49;
+    text-align: center;
+    padding-right: 16px;
+}
+
+.ifbPdif_pBajan {
+    font-weight: bold;
+    font-size: 16px;
+    color: #eb4d49;
+    text-align: center
+}
+
+.ifbPFecha {
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+    padding: 0px 10px 10px 12px
+}
+
+.ifbPHora {
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+    text-align: right;
+    padding: 0px 10px 10px 0px
+}
+
+.ifbPdif_Suben {
+    background: url("img/flsube.jpg") no-repeat 110px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #66cc10;
+    text-align: center;
+    padding-right: 16px
+}
+
+.ifbPdif_pSuben {
+    font-weight: bold;
+    font-size: 16px;
+    color: #66cc10;
+    text-align: center
+}
+
+.ifbPdif_Mant {
+    background: url("img/flmant.jpg") no-repeat 110px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    padding-right: 16px
+}
+
+.ifbPdif_pMant {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    text-align: center
+}
+
+/*Módulo derecho*/
+
+.ifbPTablaDivisas {
+    width: 272px;
+    height: 160px;
+    margin-bottom: 16px;
+}
+
+.ifbPDivTit_Par {
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.ifbPDiv_ParBajan,
+.ifbPDiv_ImparBajan {
+    font-weight: bold;
+    font-size: 12px;
+    color: #eb4d49;
+    text-align: right;
+    padding-right: 4px;
+}
+
+.ifbPDivTit_Impar {
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 3px;
+    background: #fff;
+}
+
+.ifbPDivTit_Par {
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.ifbPDiv_ImparSuben,
+.ifbPDiv_ParSuben {
+    font-weight: bold;
+    font-size: 12px;
+    color: #5cb710;
+    text-align: right;
+    padding-right: 4px;
+    background: #fff;
+}
+
+/*Indices*/
+
+.ifbPTablaIndices {
+    background: url("img/fndmapa.jpg") no-repeat top;
+    width: 510px;
+    height: 170px;
+    margin-bottom: 16px;
+}
+
+.ifDivInd {
+    height: 170px;
+}
+
+.ifbPDivAm {
+    position: relative;
+    left: 30px;
+    top: 38px;
+    width: 130px;
+    height: 70px;
+}
+
+.ifbPDivEur {
+    position: relative;
+    left: 200px;
+    bottom: 30px;
+    width: 120px;
+    height: 84px;
+}
+
+.ifbPDivAsia {
+    position: relative;
+    left: 370px;
+    bottom: 103px;
+    width: 130px;
+    height: 34px;
+}
+
+.ifbPInd {
+    font-weight: bold;
+    font-size: 11px;
+    color: #333;
+    padding-bottom: 0;
+}
+
+.ifbPIndDato_Mant {
+    font-weight: bold;
+    font-size: 11px;
+    color: #333;
+    text-align: right;
+}
+
+.ifbPIndDato_Bajan {
+    font-weight: bold;
+    font-size: 11px;
+    color: #eb4d49;
+    text-align: right;
+}
+
+.ifbPIndDato_Suben {
+    font-weight: bold;
+    font-size: 11px;
+    color: #5cb710;
+    text-align: right;
+}
+
+/*Euribor*/
+
+.ifbPTablaEuribor {
+    background: url("img/fndeur.jpg") bottom no-repeat;
+    width: 272px;
+    height: 170px;
+    margin-bottom: 16px;
+}
+
+.ifbPEurTit {
+    font-weight: bold;
+    font-size: 12px;
+    height: 18px;
+    padding-right: 4px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.ifbPEur_Suben {
+    font-weight: bold;
+    font-size: 14px;
+    color: #5cb710;
+    padding-bottom: 10px;
+}
+
+.ifbPEur_Bajan,
+.ifbPEur_ParBajan {
+    font-weight: bold;
+    font-size: 14px;
+    color: #eb4d49;
+    padding-bottom: 10px;
+}
+
+/*Mayores subidas y bajadas*/
+
+.ifbPSBM {
+    height: 26px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px 0px 0px;
+}
+
+.ifbPSBtit {
+    height: 18px;
+    font: bold 12px tahoma, arial, verdana;
+    color: #5cb710;
+    text-align: center;
+    border-bottom: 1px solid #5cb710;
+}
+
+.ifbPSBMtit_Par {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 3px;
+    padding-top: 2px;
+    width: 100px;
+}
+
+.ifbPSBMtit_Par a,
+.ifbPSBMtit_Impar a {
+    color: #0000CC;
+    text-decoration: underline;
+}
+
+.ifbPSBUlt_Par {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.ifbPSB_ParSuben,
+.ifbPSB_ImparSuben {
+    font-weight: bold;
+    font-size: 12px;
+    color: #5cb710;
+    text-align: right;
+    padding-right: 4px;
+}
+
+.ifbPSBHora_Par,
+.ifbPSBHora_Impar {
+    text-align: right;
+    font-size: 12px;
+    padding-right: 2px;
+}
+
+.ifbPSBMtit_Impar,
+.ifbPSBUlt_Impar {
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #fff;
+    padding-left: 3px;
+    padding-top: 2px;
+    width: 100px;
+}
+
+.ifbPSBUlt_Impar {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    background: #fff;
+}
+
+.ifbPSB_ParBajan,
+.ifbPSB_ImparBajan {
+    font-weight: bold;
+    font-size: 12px;
+    color: #eb4d49;
+    text-align: right;
+    padding-right: 4px;
+}
+
+/*Pulso de Mercado*/
+
+.ifbPNot_Par,
+.ifbPNot_Impar {
+    background: url("img/flnot.gif") no-repeat top left;
+    font-size: 11px;
+    color: #007657;
+    vertical-align: top;
+    padding: 2px 4px 0px 10px;
+    text-align: justify;
+}
+
+.ifbPNot_Par a,
+.ifbPNot_Impar a {
+    color: #0000CC;
+    text-decoration: underline;
+}
+
+.ifbPNot_Par a:hover,
+.ifbPNot_Impar a:hover {
+    text-decoration: none;
+}
+
+/*FIN MODULO IBEX 35 */
+
+/*************CONTENIDO****************/
+
+#CONTENIDO {
+    width: 800px;
+    padding-left: 10px;
+    float: right;
+}
+
+#PORTLET-SECTION-HEADER,
+#gco_PORTLET-SECTION-HEADER {
+    padding: 11px 15px 14px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 98%;
+    float: left;
+    margin-top: .5em;
+    margin-left: .5em;
+    padding-bottom: 10px;
+    text-align: left;
+    clear: both;
+}
+
+#PORTLET-SECTION-HEADER #HEADER,
+#gco_PORTLET-SECTION-HEADER #gco_HEADER {
+    color: #66CC10;
+    font-size: 2em;
+    height: auto;
+    padding: 0;
+    border: none;
+    float: left;
+    font-weight: normal;
+}
+
+#PORTLET-ERROR {
+    background-color: #fff;
+    width: 450px;
+    height: 100%;
+    float: left;
+    margin-top: 5em;
+    margin-left: 0.5em;
+}
+
+#HEADER_ERROR {
+    background: url("img/error.png") no-repeat 0px 0px;
+    background-size: 20px;
+    border-bottom: 1px solid #EB4D49;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+#HD_ERROR {
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.ultimo_acc {
+    float: left;
+    padding: 1em 0 0 0;
+    text-align: right;
+    width: 480px;
+}
+
+#EXPLICA {
+    font-size: 12px;
+    margin: 0.5em 0;
+    padding-left: 1.2em;
+    float: left;
+    width: 98%;
+}
+
+#EXPLICA,
+#HD_XA {
+    color: #333;
+}
+
+.literales {
+    color: #333;
+}
+
+#PORTLET-MAX {
+    width: 98%;
+    margin-left: 0.5em;
+}
+
+#HDBOT a {
+    text-indent: -9999px;
+    width: 30px;
+    margin-left: 12px;
+    float: right;
+    font-size: 10px;
+}
+
+.linea0 {
+    display: none;
+}
+
+.tot {
+    color: #333;
+    font-size: 12px;
+}
+
+.totimplista {
+    color: #333;
+    font-size: 12px;
+    text-align: right;
+    padding: 3px;
+    border-right: 1px solid #E8E8E8;
+    white-space: nowrap;
+}
+
+.totlistaC {
+    padding: 8px 2px;
+    font-size: 12px;
+    border-right: 1px solid #E8E8E8;
+    height: 18px;
+    white-space: nowrap;
+}
+
+.totlistaI {
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    border-right: 1px solid #E8E8E8;
+}
+
+tr[height="1px"] {
+    display: none;
+}
+
+.cblistaF1C {
+    background-color: #333;
+    color: #fff;
+    height: 2.2em;
+    font-size: 12px;
+    padding-left: 0.5em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.cblistaF1C.contain {
+    width: 1%;
+}
+
+#FOOTER {
+    padding-right: 5px;
+    margin-top: 10px;
+    float: right;
+    width: auto;
+}
+
+#FOOTER #BOT {
+    margin-bottom: 25px;
+}
+
+#FOOTER .datoI {
+    background: none;
+}
+
+#BOT,
+#BOTR,
+#IA_BOTR {
+    float: right;
+}
+
+#BOT a,
+#BOTR a,
+#IA_BOT a,
+#IA_BOTR a,
+#IA_BOT_FILTRO a  {
+    background: #66CC10;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#IA_BOT a:hover,
+#IA_BOTR a:hover,
+#BOT a:hover,
+#BOTR a:hover,
+a.botlista:hover {
+    text-decoration: underline;
+}
+
+#BOT.left{
+float: left;
+margin-top: 10px;
+}
+
+.cbcapa {
+    background: #333;
+    color: #fff;
+    font-weight: 200;
+}
+
+.botlista {
+    padding: 0.25em 0;
+    background: transparent;
+}
+a.botlista:link {
+    margin-left: 10px;
+}
+a.botlista  {
+    background: #66CC10;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 1px 2px 3px 0 rgba(199, 199, 199, 1);
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#BOTR a {
+    background: #e8e8e8;
+    color: #eb4d49;
+    text-shadow: 0 0 #eb4d49;
+}
+a[href="/isum/Main?ISUM_ID=portlets_area&amp;ISUM_SCR=linkServiceScr&amp;ISUM_CIPH=YafYkwpbnPIABsDm8LKhgAcZqT%2Bv4%2Bn0NHjPO8fV4KnArvHrZmsurHmrextOf8Rc"] {
+    background-color: none;
+}
+
+.cblistaC {
+    background: #333;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+}
+
+.listaC {
+    padding: 8px 3px;
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.listaC a {
+    color: #0000CC;
+}
+
+#HD_INPUT,
+#IA_HD_INPUT,
+#HD_DATO {
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+}
+
+#HD_INPUT,
+#IA_HD_INPUT,
+#HD_DATO {
+    float: left;
+}
+
+/*PADDING TABLAS*/
+
+#HEADER_INPUT,
+#IA_HEADER_INPUT,
+#HEADER_DATO {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+}
+
+#BODY_INPUT,
+#IA_BODY_INPUT,
+#simuladores #BODY_INPUT,
+#BODY_DATO,
+#simuladores #BODY_DATO,
+#gco_BODY_INPUT {
+    background: #e8e8e8;
+    border: none;
+    padding: 1.4%;
+    width: 97.2%;
+    float: left;
+    margin-top: 0em;
+    margin-bottom: 0;
+}
+
+.datoI,
+.literal,
+.impdatoI {
+    background: #e8e8e8;
+    font-size: 12px;
+}
+.literal {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    vertical-align: top;
+    width: 30%;
+}
+
+.datoI a {
+    color: #333;
+}
+
+#BODY_LISTA .datopc {
+    font-size: 11px;
+    background: none;
+    border-bottom: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#PORTLET #BODY tr {
+    background: 0;
+    border-bottom: 0;
+}
+
+#BODY tr {
+    border-bottom: 0.1em solid #e8e8e8;
+    background: #e8e8e8;
+    display: inline-block;
+    margin-left: 1em;
+    border-bottom: 0;
+}
+
+#BODY tr .datobl,
+#BODY tr .datoI,
+#BODY tr .datopc,
+#BODY tr .literal,
+#BODY tr .impdatoI {
+    border: none;
+}
+
+#BODY tr td[background*="pix_verde"] {
+    background: none;
+}
+
+.datobl {
+    border-bottom: none;
+    font-size: 12px;
+    padding: 5px;
+    width: 30%;
+    color: #333333;
+
+}
+
+.datoI {
+    border-bottom: none;
+    width: auto;
+    margin-left: 5px;
+    color: #333;
+    text-align: left;
+}
+
+.datoC {
+    border-bottom: 0px;
+    font-size: 11px;
+    color: #000000;
+    text-align: center;
+}
+
+.datopc {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    width: 30%;
+    background: #e8e8e8;
+    font-size: 12px;
+}
+
+.datopc a {
+    color: #333;
+}
+
+.cblistaI {
+    background-color: #333;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    border: 1px solid #e8e8e8;
+    height: 18px;
+}
+
+.listaI {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    height: 18px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.listaI a {
+    white-space: nowrap;
+    color: #0000CC;
+}
+
+.implistaN {
+    color: #eb4d49;
+    text-align: right;
+    font-size: 8pt;
+    padding: 3px;
+    border-bottom: 1px solid #e8e8e8;
+    height: 18px;
+    text-decoration: none;
+}
+.implistaP {
+    color: #66cc10;
+    text-align: right;
+    font-size: 8pt;
+    padding: 3px;
+    border-bottom: 1px solid #e8e8e8;
+    height: 18px;
+    text-decoration: none;
+}
+.implista,
+.listaD {
+    color: #333333;
+    text-align: right;
+    font-size: 8pt;
+    padding: 3px;
+    border-bottom: 1px solid #e8e8e8;
+    height: 18px;
+    text-decoration: none;
+}
+
+#PORTLET-INPUT {
+    width: 98%;
+    float: left;
+}
+
+tr.PAR {
+    background-color: #F5F5F5;
+}
+
+.literalcta {
+    vertical-align: middle;
+    color: #000000;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+/*estilo tabla valores / Mercados / IBEX 35, etc para que no se vea el fondo gris de debajo*/
+
+#BODY_INPUT #cotizaciones {
+    background: #fff;
+    margin: -10px;
+}
+
+.literal,
+.impdatoI {
+    border-bottom: 0;
+}
+
+.txt {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+#capaAviso td {
+    background: #fff;
+    padding: 0 0 1em 2em;
+}
+
+.aviso {
+    padding-left: 1em;
+}
+
+#wallet li {
+    font-size: 12px;
+}
+
+#PORTLET {
+    background-color: #fff;
+    width: 75%;
+    height: 100%;
+    float: left;
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+    margin-bottom: 20px;
+    border: none;
+}
+
+#BODY {
+    width: 100%;
+    border: none;
+}
+
+#PORTLET-LISTA,
+#PORTLET-DATO {
+    width: 100%;
+    margin-left: 0px;
+    float: left;
+}
+
+#BODY_LISTA {
+    float: left;
+    width: 100%;
+    border: none;
+    margin-top: 4px;
+}
+
+#PORLET tr,
+#PORLET .datopc {
+    background: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+#PORLET-INFO td {
+    background: #fff;
+}
+#PORTLET-INPUT {
+    background-color: #FFFFFF;
+    width: 92%;
+    float: left;
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-bottom: 20px;
+}
+
+#PORTLET-LISTA #BODY_LISTA .avisosb {
+    text-align: right;
+    font-size: 10px;
+    color: #eb4d49;
+    font-family: tahoma, arial;
+    text-align: center;
+}
+
+.datoIbl {
+    border-bottom: 0;
+}
+
+.tit1 {
+    border-bottom: 1px solid #333;
+    font-size: 20px;
+    color: #666666;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+#BODY_INPUT #resultado {
+    background-color: #66CC10;
+}
+
+.impdatoD {
+    border-bottom: 0px;
+}
+
+#PORTLET-SECTION-HEADER #HEADER font {
+    color: #66CC10;
+}
+
+/*************CONTRATACIÓN ONLINE****************/
+
+.contrata {
+    margin: 0 1em;
+}
+
+.contrata h3 {
+    border-bottom: 1px solid #ddd;
+    color: #66CC10;
+    font-size: 1.5em;
+    margin: 2em 0 0;
+    padding-bottom: 0.5em;
+    clear: both;
+}
+
+.contrata .contrataItem {
+    border: 1px solid #e8e8e8;
+    display: inline-table;
+    margin: 15px 5px;
+    padding: 0 1em 1em 0;
+    width: 230px;
+    height: 14em;
+    float: left;
+    position: relative;
+}
+
+.itemtit {
+    height: 80px;
+}
+
+.contrata .contrataItem img {
+    float: left;
+    margin: 0 0.5em 5px 0;
+}
+
+.titparent {
+    display: table;
+    height: 80px;
+    color: #66CC10;
+    font-size: 1.2em;
+}
+
+.descrip p {
+    width: 100%;
+    margin-left: 1em;
+}
+
+.contrata .contrataItem h4 {
+    font-weight: 100;
+}
+
+.contrata .contrataItem a {
+    font-size: 12px;
+    color: #fff;
+    background: #66cc10;
+    font-weight: 100;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 2px;
+    border: 1px solid #66cc10;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.contrata .contrataItem a:hover {
+    text-decoration: underline;
+}
+
+/*************FIN CONTRATACIÓN ONLINE****************/
+
+/*************FIN CONTENIDO****************/
+
+/*paginación*/
+
+#PAGINAR {
+    font-size: 12px;
+    float: left;
+    color: #666666;
+    width: 95%;
+    height: 18px;
+}
+
+#PAGINAR a.pag:link {
+    font-size: 12px;
+    color: #333;
+}
+
+.txtdato,
+.cbcapa {
+    font-size: 12px;
+}
+
+/*enlaces con clase .dato*/
+
+a.link:link {
+    font-size: 11px;
+    font-weight: 100;
+    color: #0000CC;
+    text-decoration: underline;
+    font-family: "Open Sans", sans-serif;
+}
+
+a.link:visited{
+    color: #333333;
+}
+
+/*Añado important para sobreescribir estilo en línea*/
+a.dato {
+    background: transparent!important;
+    color: #333;
+    text-decoration: underline;
+}
+
+/*Añado important para sobreescribir estilo en línea*/
+.dato {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+input.dato.blue {
+    background: #457eea;
+}
+
+INPUT.dato {
+    background-color: #fff;
+    font-size: 11px;
+    color: #333;
+    margin-left: 0px;
+    border: 1px solid #999;
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+}
+
+SELECT.dato,
+SELECT.gco_dato {
+    font-size: 14px;
+    background-color: #fff;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #999;
+}
+
+#PORTLET #BODY table {
+    background: #e8e8e8 none repeat scroll 0 0;
+    padding: 1em;
+}
+
+#BODY_DATO .link2 {
+    font-size: 12px;
+}
+
+/*ESTILOS TABLA OJO*/
+
+#PORTLET #BODY .datopc {
+    background: 0;
+    width: 349px;
+}
+
+#BODY_INPUT strong {
+    font-size: 1.4em;
+}
+
+.cblistaC a {
+    color: #fff;
+}
+
+/*FIN DE ESTILOS ESTILOS TABLA OJO*/
+
+/*ESTILOS PARA CAJA "IR A" DE POSICION GLOBAL*/
+
+[id*="cuenta_irA"] table td .txtdato a {
+    color: #333;
+    text-decoration: underline;
+    background: transparent;
+    box-shadow: none;
+}
+
+/*FIN DE ESTILOS PARA CAJA "IR A" DE POSICION GLOBAL*/
+
+#HEADER_AVISO {
+    border-bottom: 2px solid #000000;
+}
+
+#HD_XA {
+    font-weight: bold;
+    background-image: none;
+    font-size: 17px;
+    height: 20px;
+    margin-bottom: 1em;
+    margin-left: 0;
+    padding-bottom: 4px;
+    padding-left: 0px;
+    padding-top: 0;
+    margin-top: 0px;
+}
+
+td.cblistaF1C+td {
+    background-color: #333;
+}
+
+#CBLOGOTXT {
+    padding-top: 0.8em;
+}
+
+.radbot {
+    background: #e8e8e8 none repeat scroll 0 0;
+    padding-left: 5px;
+    width: 1%;
+}
+
+/******ESTILOS EDITADOS PARA ARREGLAR RURALVIA******/
+
+/*NO BORRAR*/
+
+#IA_HD_INPUT {
+    font-weight: 100;
+    margin-left: 4px;
+    padding: 5px;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+    background: #333;
+}
+
+/*CAJA FIRMA*/
+
+/*Contenedor global*/
+
+.coordenadas-resultados {
+    float: left;
+    width: 22%;
+    padding-top: 19px;
+    padding-left: 10px;
+    text-align: center;
+}
+input {
+    box-shadow: none;
+}
+.coordenadas-resultados input[type='password'] {
+    width: 120px;
+    font: small-caption;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    height: 0.85em;
+    vertical-align: middle;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .coordenadas-resultados input[type='password'] {
+        box-sizing: content-box;
+        height: 20px;
+        font-size: 14px;
+    }
+}
+
+.firma-body {
+    background-color: #e8e8e8;
+    width: 100%;
+}
+
+.firma-box-text {
+    float: left;
+    width: 20%;
+    padding: 6px;
+}
+
+.firma-box-text p {
+    width: 100%;
+    min-height: 48px;
+    margin: 0px;
+}
+
+.firma-box-resultado {
+    float: left;
+    width: 25%;
+    padding-top: 19px;
+    padding-left: 0;
+}
+
+.cambio-clave .firma-box-resultado {
+    padding-left: 5px !important;
+}
+
+.firma-box-resultado input {
+    border: 1px solid #e8e8e8;
+    background-image: url("img/img-input.png");
+    background-repeat: no-repeat;
+    background-position:  -1px -2px;
+    background-color: transparent;
+    width: 21px;
+    height: 22px;
+    background-size: 23px 23px;
+    margin-right: 5px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 23px;
+    padding: 2%;
+}
+
+.firma-box-resultado input.active {
+    background-image: none;
+    border: 1px solid #e8e8e8;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 21px;
+    height: 22px;
+    background-size: 21px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.firma-box-resultado input.completo {
+    background-image: none;
+    border: 1px solid #626262;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 21px;
+    height: 22px;
+    background-size: 21px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 2.2em;
+    line-height: 21px !important;
+}
+
+/*Safari fix input pass*/
+
+.firma-box-resultado input.num-coordenada.active.completo {
+    position: relative;
+    top: -8px;
+    top: -1;
+    padding: 0px;
+    font: 2.2em bold;
+}
+
+/*ie10*/
+
+@media screen and (min-width:0\0) {
+    .firma-box-resultado input.num-coordenada.active.completo {
+        position: relative;
+        top: -1px;
+        padding: 0px;
+        font: 2.2em bold;
+    }
+}
+
+/* Chrome 29+ */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    .firma-box-resultado input.num-coordenada.active.completo {
+        position: relative;
+        top: -1px !important;
+        padding: 0px;
+        font: 2.2em bold;
+    }
+}
+
+
+/*Firefox*/
+
+@-moz-document url-prefix() {
+    .firma-box-resultado input.num-coordenada.active.completo {
+        position: relative;
+        top: -1px !important;
+        padding: 0px;
+        font: 2.2em bold;
+    }
+}
+
+/* Chrome 22-28 */
+
+@media screen and(-webkit-min-device-pixel-ratio:0) {
+    .firma-box-resultado input.num-coordenada.active.completo {
+        position: relative;
+        top: -1px !important;
+        padding: 0px;
+        font: 2.2em bold;
+    }
+}
+
+
+.firma-box-teclado {
+    float: left;
+    width: 25%;
+    padding-top: 0px;
+    padding-left: 17px;
+}
+
+.fila-teclado {
+    float: left;
+    width: 100%;
+}
+
+.fila-teclado-cambio-clave {
+    float: left;
+    width: 100%;
+}
+
+.firma-box-teclado-cambio-clave {
+    float: left;
+    width: 34%;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.firma-box-teclado .num-teclado {
+    background-color: #fff;
+    float: left;
+    width: 21px;
+    margin: 3px;
+    height: 22px;
+}
+
+.firma-box-teclado .num-teclado:hover {
+    background-color: #999;
+}
+/*se pone ese color al hover para que no se confunda con el fondo*/
+
+.firma-box-teclado .teclaVirtual {
+    border: 1px solid #e8e8e8;
+    width: 17px;
+    height: 18px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+}
+
+.firma-box-teclado-cambio-clave .teclaVirtual {
+    border: 1px solid #e0e0e0;
+    width: 18px;
+    font-family: Verdana, Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #333;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+    height: 18px;
+}
+.firma-box-teclado-cambio-clave .num-teclado {
+    background-color: #fff;
+    float: left;
+    width: 22px;
+    margin: 2px;
+    height: 22px;
+}
+
+.firma-box-botones-cambio-clave {
+    float: left;
+    width: 60%;
+    margin-top: 0px;
+}
+
+.firma-box-botones {
+    float: left;
+    width: 28%;
+    margin-top: 0px;
+}
+
+.firma-btn {
+    float: left;
+    width: 60%;
+}
+
+.info-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.firma-btn-cambio-clave {
+    float: left;
+    width: 30%;
+}
+
+.firma-btn-cambio-clave .btn-default {
+    height: 22px;
+    width: 55px;
+    box-shadow: 1px 1px 1px #000;
+    border: 1px solid #d2d2d2;
+    line-height: 20px;
+}
+
+.firma-btn-cambio-clave .btn-default:disabled,
+.btn-default.btn-secondary {
+    background-color: #e8e8e8;
+    color: #999;
+    text-shadow: none;
+}
+
+.firma-btn-cambio-clave .btn-default.disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: #e8e8e8;
+    color: #999;
+    text-shadow: none;
+}
+
+.firma-btn .btn-default.disabled,
+.btn-default.btn-secondary {
+    background-color: #999;
+    color: #333;
+    text-shadow: none;
+    text-shadow: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+.firma-btn .btn-default {
+    height: 22px;
+    width: 55px;
+    color: #fff;
+    background: #66cc10;
+    box-shadow: 1px 1px 1px #000;
+    border: 1px solid #d2d2d2;
+    line-height: 20px;
+}
+
+.firma-btn .btn-default:hover {
+    background-color: #5cb710;
+}
+
+.firma-btn .btn-default:active:focus {
+    color: #fff;
+    background-color: #5cb710;
+    border: none;
+}
+
+.firma-ayuda {
+    float: right;
+    width: 40%;
+    padding-top: .3em;
+}
+
+.dato-cambio-clave {
+    width: 100px;
+    height: 18px;
+    font:small-caption;
+    font-size: 30px;
+}
+
+@-moz-document url-prefix() {
+    .dato-cambio-clave {
+        font-size: 18px;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .dato-cambio-clave {
+        box-sizing: content-box;
+        font-size: 12px;
+    }
+}
+
+.firma-ayuda-cambio-clave {
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+
+.firma-btn-cambio-clave .btn-default:hover {
+    background-color: #5cb710;
+}
+
+.firma-btn-cambio-clave .btn-default:active:focus {
+    color: #fff;
+    background-color: #5cb710;
+    border: none;
+}
+
+.resaltar {
+    outline: 2px solid #d2d2d2;
+}
+
+/*Bloqueo Tarjetas*/
+
+td.listaC.bloqueoTemporal__celda {
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 1em;
+}
+
+div.tarjeta__estado {
+    display: none;
+    text-align: left;
+    text-transform: none;
+}
+
+.toggle.toggle--activado {
+    border-color: #66cc10;
+    background: #66cc10;
+}
+
+.toggle--activado .toggle__button {
+    left: 1.5em;
+    border-color: #66cc10;
+}
+
+div[data-estado="90"].tarjeta__estado {
+    color: #eb4d49;
+    display: block;
+}
+
+.toggle--wrap {
+    text-align: center;
+}
+
+.etiquetaToggle {
+    display: inline-block;
+    font-weight: 600;
+    width: 7em;
+    vertical-align: middle;
+}
+
+.toggle {
+    display: inline-block;
+    border-radius: 1em;
+    height: 2em;
+    width: 3.5em;
+    position: relative;
+    border: none;
+    background: #eb4d49;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.toggle__button {
+    display: inline-block;
+    width: 1.7em;
+    height: 1.7em;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border: 2px solid #eb4d49;
+}
+
+/*****************ESTILOS FIRMA NUEVA*************/
+
+
+
+.firma-btn {
+    float: left;
+    width: 60%;
+}
+
+.firma-btn .btn-default {
+    height: 22px;
+    width: 55px;
+    box-shadow: 1px 1px 1px #000;
+    border: 1px solid #d2d2d2;
+    line-height: 20px;
+}
+
+.firma-btn .btn-default:disabled,
+.btn-default.btn-secondary {
+    background-color: #e8e8e8 !important;
+    color: #999;
+    text-shadow: none;
+}
+
+/*fin*/
+
+/*gestión ficheros*/
+
+#BODY_INFO {
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+#PORTLET-INFO {
+    float: left;
+    background-color: #fff;
+    width: 98%;
+}
+
+TEXTAREA.IA_dato {
+    background-color: #fff;
+    font-size: 11px;
+    color: #333;
+    font-family: tahoma, verdana, arial, helvetica, sans-serif;
+    resize: none;
+    overflow: auto;
+}
+
+#IA_PORTLET-INFO {
+    float:left;
+    background-color: #FFFFFF;
+    width:98%;
+    margin-top: 0em;
+    margin-left: 0.9em;
+}
+
+#IA_BODY_INFO {
+    background-color: #fff;
+    width: auto;
+    padding: 10px;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+    font-family: verdana;
+}
+
+#IA_HEADER_INFO {
+    height: 14px;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    background: url(img/nota.gif) no-repeat;
+}
+
+.IA_txtdato {
+    font-size: 0.9em;
+    color: #333;
+    text-align: left;
+    padding-left: 4px;
+}
+
+.IA_literal {
+    font-size: 11px;
+    color: #333;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left: 5px;
+    vertical-align:top;
+    width:30%;
+}
+
+tr.IA_IMPAR {
+    background-color: #FFFFFF;
+}
+
+tr.IA_PAR {
+    background-color: #fff;
+}
+
+INPUT.IA_dato {
+    font-size: 11px;
+    color: #333;
+    margin-left: 0px;
+}
+
+#IA_BODY_LISTA table input{
+    font-family: tahoma,Arial,Helvetica,sans-serif;
+}
+
+#IA_CONTENIDO {
+    width: 800px;
+    padding-left: 10px;
+    float: right;
+}
+#IA_PORTLET-INPUT {
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+    float: left;
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-bottom: 25px;
+}
+
+#IA_PORTLET-SECTION-HEADER{
+    background: #fff;
+    padding: 20px 15px 20px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin-top: 0em;
+    margin-left: 0.5em;
+    text-align: left;
+}
+#IA_HEADER {
+    color: #66cc10;
+    font-size: 2em;
+    height: auto;
+    padding: 0;
+    font-weight: 200;
+    text-align: left;
+    float: left;
+}
+#IA_HDBOT {
+    display: inline-block;
+    float: right;
+}
+#IA_HDBOT a {
+    float: right;
+    margin-left: 14px;
+    margin-right: 5px;
+    font-size: 10px;
+    text-indent: -9999px;
+    width: 30px;
+}
+#IA_EXPLICA {
+    font-size: 12px;
+    margin: 0.5em 0;
+    padding-left: 1.2em;
+    color: #333;
+    width: 97.5%;
+    float: left;
+}
+#IA_PORTLET-LISTA {
+    background-color: #fff;
+    height: 65%;
+    width: 100%;
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-bottom: 20px;
+    float: left;
+}
+.IA_oculto {
+    display: none;
+}
+.mostrado {
+    display: inline;
+}
+#IA_PORTLET-LISTA #modmasenlace img, #IA_PORTLET-LISTA #devmasenlace img, #IA_PORTLET-LISTA #filtro img, #IA_HEADER_INPUT_MM img, #IA_PORTLET-LISTA #borradoenlace img, #IA_PORTLET-LISTA #borrado img {
+    display: none;
+}
+#IA_PORTLET-LISTA #modmasenlace a, #IA_PORTLET-LISTA #devmasenlace a, #IA_HEADER_INPUT_MM a[onclick*="mod"], #IA_HEADER_INPUT_MM a[onclick*="Mas"], #IA_PORTLET-LISTA #filtro a, #IA_HD_INPUT_MM a[onclick*="fil"], #IA_PORTLET-LISTA a[onclick*="bor"] {
+    background: url("img/mod_masiva.png") no-repeat left center;
+    background-size: 23px;
+    padding: 0 0 1em 2.4em;
+    display: inline-block;
+    margin: 0.5em 0;
+}
+#IA_PORTLET-LISTA #filtro a, #IA_HD_INPUT_MM a[onclick*="fil"] {
+    background: url("img/mostrar_filtro.png") no-repeat left center;
+    background-size: 23px;
+}
+#IA_FOOTER_LISTA {
+    width: 100%;
+    /* height: auto; */
+    padding-right: 5px;
+    margin: 0.91em 0px 1.4em 0px;
+    border: none;
+}
+.IA_A_LEFT {
+    padding-top: 0em;
+    text-align: left;
+}
+.IA_A_RIGHT {
+    text-align: right;
+}
+.IA_datoF, SELECT.IA_dato {
+    font-size: 12px;
+    color: #333;
+    font-family: "Open Sans",sans-serif;
+    text-align: left;
+    padding-top: 0em;
+}
+.IA_SEPARACION_BOTONES {
+    padding-left: 10px;
+}
+
+.IA_datoI, .IA_datobl, .IA_datobl_35, .IA_datopc, .IA_datobl_10, .IA_datobl_0 {
+    border-bottom: 0px;
+}
+a.IA_link1:link, #IA_BODY_INPUT td, #IA_HEADER_INPUT_MM a {
+    font-size: 12px;
+    background: #e9e9e9;
+}
+
+.IA_cblistaC{
+    background-color: #333;
+    color: #fff;
+    height: 2.2em;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 0px 1px 2px;
+    text-decoration: none;
+}
+.IA_datobl,
+.IA_datopc {
+    font-size: 12px;
+    color: #333;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    vertical-align: top;
+    width: 30%;
+    border-bottom: 0;
+}
+.IA_datoI {
+    font-size: 11px;
+    color: #333;
+    text-align: left;
+    margin-left: 5px;
+    border-bottom: 0;
+}
+#IA_BODY_INPUT{
+    margin-bottom: 2em;
+}
+#IA_BODY_LISTA {
+    width: 100%;
+    padding-top: 1em;
+    background-color: #fff;
+}
+#data_grid_header {
+    width: 96%;
+    table-layout: fixed;
+}
+
+/*IA AJAX*/
+#data_grid_container {
+    width: 100%;
+}
+#data_grid_viewPort {
+    float: left;
+    border-bottom: 1px solid #ababab;
+    width: 96%;
+}
+/* CSS Document */
+.fixedTable {
+    table-layout : fixed;
+ }
+
+ td.cell {
+     padding       : 2px 3px 2px 1px;
+     margin        : 0px;
+     border-bottom : 1px dotted #d8d8d8;
+     border-right  : none;
+     font-size     : x-small;
+     height        : 20px;
+     line-height	  :	15px;
+     white-space	  : nowrap;
+     overflow      : hidden;
+     font-family	  : verdana, arial, helvetica, sans-serif;
+ }
+
+ td.cellmov {
+     font-size	: 11px;
+     font-weight	: bold;
+ }
+
+
+ .first {
+    border-left  : none; /* 1px solid #b8b8b8; */
+ }
+
+ .tableCellHeader {
+        padding          : 2px;
+        text-align       : left;
+     font-size     : x-small;
+     height        : 20px;
+     line-height	  :	15px;
+        border-top       : none;
+        border-right     : none;
+        border-bottom    : none;
+        background-color : #dddddd;
+        text-decoration	: none;
+        color			: #06c;
+ }
+
+ .tableCellHeaderDet {
+        padding          : 1px 1px 1px 1px;
+        text-align       : left;
+     vertical-align:top;
+     font-size     : x-small;
+     height        : 17px;
+     line-height	  :	15px;
+        text-decoration	: none;
+ }
+
+ .headerText {
+     color: #888888;
+     text-decoration : underline;
+ }
+
+ .importe, .importeNeto, .importeAbsoluto {
+    text-align: right;
+}
+.imp_positivo {
+    color: #333;
+}
+.imp_negativo {
+    color: #EB4D48;
+}
+.ajax_msg {
+    color: #fff;
+    background-color: #EB4D48;
+    white-space: nowrap;
+}
+
+ #msg{
+     margin-bottom:3px;margin-right:0px;font-size:12px; float:right;
+ }
+ #bookmark{
+    margin-bottom:3px;
+    float:left;
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+    margin-top: 1em;
+    margin-left: 5px;
+}
+ #bookmarkResto{
+     margin-bottom:3px; float:left; font-size: 11px; font-weight: normal; color: #004539;
+ }
+ .editable {
+     background-color: rgb(255, 255, 153); background-image: none;
+ }
+ .editor_ok_button { margin-right: 1.0em; }
+
+
+ h1, h2, h3, h4, h5 { clear: both; }
+
+ img.pantallazo {
+     margin-right:2.0em; padding:3px; border: none;
+     float: left;
+ }
+
+ .enlaceListadoNormal {
+    white-space: nowrap;
+}
+ .enlaceListadoNormal A:link {
+    color: #0000CC;
+    text-decoration:underline;
+}
+ .enlaceListadoNormal A:visited {
+    color: #0000CC;
+    text-decoration:underline;
+}
+ .enlaceListadoNormal A:hover {
+    color: #0000CC;
+    text-decoration:underline;
+}
+ .enlaceListadoNormal A:active {
+    color: #0000CC;
+    text-decoration:underline;
+}
+
+ .enlaceListadoError {
+    white-space: nowrap;
+}
+ .enlaceListadoError A:link {
+    color: #EB4D48;
+    text-decoration:underline;
+}
+ .enlaceListadoError A:visited {
+    color: #EB4D48;
+    text-decoration:underline;
+}
+ .enlaceListadoError A:hover {
+    color: #EB4D48;
+    text-decoration:underline;
+}
+ .enlaceListadoError A:active {
+    color: #EB4D48;
+    text-decoration:underline;
+}
+
+
+ .IA_campoError{
+     font-size: 11px;
+     background-color:#FFFFC0;
+     margin-left:0px;
+
+ }
+
+ .IA_verde{
+    color:#007657;
+}
+.IA_error{
+    color:#EB4D48;
+}
+
+.IA_mostrarMensaje{
+    color:#EB4D48;
+    margin-left:25px;
+    font-size:11px;
+    border:1px solid #EB4D48;
+    width:550px;
+    padding:15px;
+    margin-top:15px;
+    margin-left:15px;
+}
+.IA_mostrarMensajeInformativo{
+    color:#007657;
+    margin-left:25px;
+    font-size:11px;
+    border:1px solid #007657;
+    padding:15px;
+
+    width:auto;
+    margin-top:15px;
+    margin-left:15px
+}
+
+.IA_mostrarMensajeAyuda{
+    color:#333;
+    font-size:11px;
+    padding:5px;
+    width:auto;
+    margin-left:15px
+}
+
+
+ /** NUEVOS */
+
+ /* Asociar al elemento body*/
+ .IA_BODY{
+     background-repeat:no-repeat;
+ }
+ /* Columna con el ID en los listados*/
+ .IA_COL_ID{
+     width:5%;
+ }
+ /* Columna que contiene un check en los listados*/
+ .IA_COL_CHECK{
+     width:5%;
+     text-align:center;
+ }
+
+ /* Anchos definidos*/
+ .IA_WIDTH_5{width:5%;max-width: 1px;}
+ .IA_WIDTH_10{width:10%;max-width: 1px;}
+ .IA_WIDTH_15{width:15%;max-width: 42px;}
+ .IA_WIDTH_20{width:20%;max-width: 151px;}
+ .IA_WIDTH_25{width:25%;max-width: 82px;}
+ .IA_WIDTH_30{width:30%;max-width: 1px;}
+ .IA_WIDTH_33{width:33%;max-width: 1px;}
+ .IA_WIDTH_40{width:40%;max-width: 1px;}
+ .IA_WIDTH_45{width:45%;max-width: 1px;}
+ .IA_WIDTH_50{width:50%;max-width: 1px;}
+ .IA_WIDTH_60{width:60%;max-width: 1px;}
+ .IA_WIDTH_66{width:66%;max-width: 1px;}
+ .IA_WIDTH_70{width:70%;max-width: 1px;}
+ .IA_WIDTH_75{width:75%;max-width: 1px;}
+ .IA_WIDTH_80{width:80%;max-width: 1px;}
+ .IA_WIDTH_90{width:90%;max-width: 1px;}
+ .IA_WIDTH_95{width:95%;max-width: 1px;}
+ .IA_WIDTH_100{width:100%;max-width: 1px;}
+ .IA_WIDTH_AUTO{width:auto;max-width: 1px;} /** Utilizar en la columna fija en los listados*/
+
+ /* Alturas*/
+
+ .IA_HEIGHT_25{height:25px;}/*Altura para las columnas dinamicas*/
+ .IA_HEIGHT_18{height:18px;}/*Altura para las columnas dinamicas en GRUPOS*/
+
+ /* Alineacion de elementos*/
+ .IA_A_LEFT{text-align:left;}
+ .IA_A_RIGHT{text-align:right;}
+ .IA_A_CENTER{text-align:center;}
+ .IA_A_JUSTIFY{text-align:justify;}
+
+ /* INPUT DENTRO DE LAS TABLAS*/
+ .IA_INPUT_TABLE{
+     font-size: 100%;
+     width: 90%;
+ }
+
+
+ /* Posicionamiento de elementos desplazados en formularios de alta */
+ .IA_PADDING_LEFT{padding-left: 4em}
+ .IA_PADDING_RIGHT{padding-right: 4em;}
+
+ /* Opciones de visualización de elementos */
+ .IA_VISIBLE{
+     visibility:visible;
+ }
+ .IA_VISIBLE_HIDDEN{
+     visibility:hidden;
+ }
+
+ .IA_DISPLAY_NONE{display:none;}
+ .IA_DISPLAY_INLINE{display:inline;}
+ .IA_DISPLAY_BLOCK{display:block;}
+
+ .IA_FLOAT_NONE{
+     float:none!important;
+ }
+
+ .IA_POS_ABSOLUTE{
+     position:absolute;
+ }
+
+ .IA_WHITE_SPACE_NO_WRAP{
+      white-space: nowrap;
+ }
+ /* Fin Opciones de visualización de elementos */
+
+ /* Formato de texto */
+ .IA_TEXT_RED{
+    color:#EB4D48;
+}
+ .IA_TEXT_BOLD{
+     font-weight: bold;
+ }
+
+ .IA_TEXT_ITALIC{
+     font-style:italic;
+ }
+
+ /* Fin Formato de texto */
+
+ /** ESTILO CALENDARIOS*/
+ /* A Utilizar en los Xsl para los div que contienen los calendarios.*/
+ .IA_CAL{
+     position:absolute;
+     z-index:1;
+ }
+
+ .IA_ID_CAL{
+     position:absolute;
+     visibility: hidden;
+     z-index:2;
+ }
+
+ /* Internos sustituyen a los declarados en calendar.js*/
+ .txtDay {
+     color:#333;
+     font-family:arial;
+     font-size:9px;
+     text-decoration:none;
+ }
+ .txtMonth {
+     color:#333;
+     font-family:arial;
+     font-size:11px;
+     text-decoration:none;
+ }
+ .tblCalendar {
+     border:1px solid #333;
+ }
+ .tdMonth {
+     padding:2px;
+ }
+ .tdDayW {
+     border:1px solid #C0C0C0;
+     padding:2px;
+ }
+ .tdDay {
+     border:1px solid #CCCCCC;
+     padding:2px;
+ }
+ .btnPrev {
+     color:#333;
+     font-family:verdana;
+     font-size:14px;
+     font-weight:bold;
+     text-decoration:none;
+ }
+ .btnNext {
+     color:#333;
+     font-family:verdana;
+     font-size:14px;
+     font-weight:bold;
+     text-decoration:none;
+ }
+ /** FIN ESTILOS CALENDARIOS*/
+
+ /** PAGINA DE GRUPOS */
+ #IA_BOT_GRUPOS {
+     height: 14px;
+     text-align:center;
+     margin-right:5px;
+     padding-left:5px;
+     text-align:center;
+ }
+
+ #IA_BOT_GRUPOS a:link		{font-size: 11px; color: #333; background: #E2E7E7; font-weight: normal; text-align: center; vertical-align: middle; margin: 1px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px; padding-top: 1px; border-width: 1px; border-style: solid; border-color: #C8D1D1 #404040 #404040 #C8D1D1; height: 14px;text-decoration: none;}
+ #IA_BOT_GRUPOS a:visited	{font-size: 11px; color: #333; background: #E2E7E7; font-weight: normal; text-align: center; vertical-align: middle; margin: 1px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px; padding-top: 1px; border-width: 1px; border-style: solid; border-color: #C8D1D1 #404040 #404040 #C8D1D1; height: 14px;text-decoration: none;}
+ #IA_BOT_GRUPOS a:active 	{font-size: 11px; color: #333; background: #E2E7E7; font-weight: normal; text-align: center; vertical-align: middle; margin: 1px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px; padding-top: 1px; border-width: 1px; border-style: solid; border-color: #C8D1D1 #404040 #404040 #C8D1D1; height: 14px;text-decoration: none;}
+ #IA_BOT_GRUPOS a:hover 	{font-size: 11px; color: #004539; background: #fff; font-weight: normal; text-align: center; vertical-align: middle; margin: 1px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px; padding-top: 1px; border-width: 1px; border-style: solid; border-color: #C8D1D1 #404040 #404040 #C8D1D1; height: 14px; text-decoration: none;}
+
+ #IA_SEL_GRUPOS	{
+     width:100%;
+     height: 25px;
+     margin-right: 5px;
+     border: 0px solid #333;
+     margin-top:3em;
+ }
+
+ .IA_COL_CHECK_GRUPOS{
+     width:10%;
+     text-align:center;
+     padding-left:2px;
+ }
+ /** FIN PAGINA DE GRUPOS*/
+ #IA_FOOTER {
+    width: 100%;
+    height: 25px;
+    padding-right: 5px;
+    margin-top: 20px;
+    border: none;
+    display: inline-block;
+}
+.IA_cblistaI, #IA_HEADER_INPUT {
+    background-color: #333;
+}
+
+table.IA_contenido {
+    margin-top: -3px;
+    margin-bottom: 4px;
+    font-size: 11px;
+    background-color: #dbf4fc;
+    border: 2px solid #47adcf;
+    width: 100%;
+}
+.IA_POS_ABSOLUTE,
+#btc {
+    margin-top: 1em;
+}
+#tooltipbody img {
+    display: none;
+}
+.IA_dcha > a > img {
+    display: block!important;
+}
+.IA_contenido:before {
+    bottom:100.5%;
+    left: 35%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.IA_contenido:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #47adcf;
+    border-width: 16px;
+    margin-left: -16px;
+}
+tr.IA_centro {
+    background-color: #dbf4fc!important;
+    text-align: left;
+}
+td.IA_arriba {
+    font-size: 3px;
+    background-color: #dbf4fc!important;
+    border-top: none!important;
+}
+td.IA_izda {
+    border-left: none!important;
+}
+td.IA_dcha {
+    border-right: none!important;
+}
+td.IA_abajo {
+    background-color: #dbf4fc!important;
+    border-bottom: none!important;
+}
+td.IA_tit {
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 3px;
+    background-color: #dbf4fc!important;
+}
+.IA_arriba_izda img,
+.IA_arriba_dcha img,
+.IA_abajo_dcha img,
+.IA_abajo_izda img {
+    display: none
+}
+.IA_datobl_0, .IA_datobl_10, .IA_datopc, .datopc {
+    color: #333;
+}
+
+#IA_BOT {
+    text-align: right;
+    /* height: auto; */
+    padding-left: 10px;
+}
+
+table#data_grid {
+    width: 100%;
+}
+
+#data_grid_grupo_container div,
+#data_grid_resto_container div {
+    float: left;
+}
+
+table#data_grid_resto {
+    width: 341px;
+}
+
+table#data_grid_grupo {
+    width: 341px;
+}
+
+table#data_grid_grupo_header {
+    width: 342px;
+}
+
+table#data_grid_resto_header {
+    width: 339px;
+}
+
+.IA_lista {
+	font-size: 11px;
+	color: #333;
+	vertical-align: middle;
+	padding-top: 1px;
+	padding-bottom: 1px; height:18px;
+	overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@-moz-document url-prefix() {
+    .IA_lista {
+        padding: 0px 4px;
+    }
+}
+
+/*desconexion*/
+#SOMBRA {
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    height: 188px;
+    width: 501px;
+}
+#SOMBRA #CAJA {
+    background-color: #fff;
+    border: 1px solid #999;
+    height: 215px;
+    width: 500px;
+    padding-top: 0.8em;
+}
+#SOMBRA .literal {
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 1em;
+    background: transparent;
+}
+#SOMBRA #TIT1 {
+    color: #666;
+    font-size: 16px;
+    padding-right: 25px;
+    text-align: right;
+}
+#PORTLET-PUBLI {
+    float: right;
+    width: 150px;
+    font-size: 11px;
+    background: #FFFFFF;
+    padding-right: 5px;
+}
+#PUBLI {
+    width: 100%;
+    margin: 1em;
+    padding-bottom: 10px;
+}
+
+div.solicitud {
+    margin: 2em 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+.solicitud p {
+    font-size: 14px;
+    margin: 1em;
+}
+
+.solicitud img {
+    max-width: 400px;
+    margin-top: 2em;
+}
+
+.recomendacion_comparador{
+    margin-top: 20px;
+    margin-left: 40px;
+    float:left;
+}
+
+.recomendacion_comparador img{
+float: left;
+}
+
+#TEXTO_REC{
+float: left;
+margin-left: 20px;
+font-size: 14px;
+font-weight: bold;
+}
+
+select.selectFondos{
+width: 250px;
+}
+
+/**************************** INFOBOLSA *************************/
+
+.fondoSolapas{
+    height: 18px;
+    text-align: center;
+}
+
+.Selec{
+    text-align: center;
+}
+.Selec a{
+    color: #66cc10;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration:none;
+    padding: 0px 5px 0px 5px;
+}
+.noSelec{
+    text-align: center;
+    padding: 0px 5px 0px 5px
+}
+.noSelec a{
+    font-size: 11px;
+    text-decoration:none;
+}
+.noSelec a:hover{
+    color: #66cc10;
+}
+
+.separaSolapa{
+    color:#007657;
+    width: 1px;
+    font: 11px tahoma,arial,verdana;
+}
+.pdfIcon{
+    padding:0px 5px 4px 3px
+}
+.pdfIcon a{
+    color: #66cc10;
+    font-size: 10px;
+    text-decoration:none;
+}
+.pdfIcon a:hover{
+    text-decoration:underline
+}
+
+.nota{
+    color:#007657;
+    font-size: 10px;
+    font-weight: bold;
+    padding:8px 5px 2px 5px;
+}
+.powered{
+    padding:10px 5px 0px 5px;
+    text-align:right;
+}
+.fichaValor {
+    color: #66cc10;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: #66cc10 1px solid;
+}
+
+.nombreMercado{
+    border-bottom: #66cc10 1px solid;
+    height:28px;
+    padding:14px 0px 4px 0px;
+}
+.nombreMercadoPDF{
+    border-bottom:#007856 1px dashed;
+    color:#000000;
+    font:bold 18px tahoma,arial,verdana;
+    height:28px;
+    padding:10px 0px 14px 0px
+}
+.TablaUlt{
+    width:98%;
+    text-align: center;
+    border: #e8e8e8 1px solid;
+    margin-bottom: 10px;
+}
+.Ult{
+    font-weight:bold;
+    font-size:24px;
+    text-align:center;
+    color:#007657;
+    padding-bottom:4px;
+}
+.Pdif_Suben{
+    background:url(infobolsa_imgP/flsube.jpg) no-repeat right;
+    font-weight:bold;
+    font-size:16px;
+    color:#009036;
+    text-align: left;
+    padding-left: 16px
+}
+.Pdif_pSuben{
+    font-weight:bold;
+    font-size:16px;
+    color:#009036;
+    text-align: center
+}
+.Pdif_Bajan{
+    background:url(infobolsa_imgP/flbaja.jpg) no-repeat right;
+    font-weight:bold;
+    font-size:16px;
+    color:#eb4d49;
+    text-align: left;
+    padding-left: 16px
+}
+.Pdif_pBajan{
+    font-weight:bold;
+    font-size:16px;
+    color:#eb4d49;
+    text-align: center
+}
+.Pdif_Mant{
+    background:url(infobolsa_imgP/flmant.jpg) no-repeat right;
+    font-weight:bold;
+    font-size:16px;
+    color:#333333;
+    text-align: left;
+    padding-left: 16px
+}
+.Pdif_pMant{
+    font-weight:bold;
+    font-size:16px;
+    color:#333333;
+    text-align: center
+}
+.cuadroTabla{
+    padding: 3px 4px;
+    vertical-align:top;
+    border-bottom: 1px solid #333;
+}
+.cuadroNombre{
+    border:solid 4px #FFFFFF;
+    vertical-align:top;
+}
+.titPpal{
+    background: #FFF;
+    border-bottom: 1px solid #66cc10;
+    color: #66cc10;
+    font:bold 11px tahoma,arial,verdana;
+    height:18px;
+    padding:0px 0px 0px 10px;
+}
+.tit{
+    background: #FFF;
+    border-bottom: 1px solid #66cc10;
+    color: #66cc10;
+    font:bold 11px tahoma,arial,verdana;
+    height:16px;
+    padding:0px 0px 0px 5px;
+    width:20%;
+}
+.cPar,
+.cImpar,
+.cDifPar,
+.cDifImpar {
+    font-size: 12px;
+    height:18px;
+    padding:0px 5px 0px 0px;
+    text-align:right
+}
+
+.cTitPar,
+.cTitImpar{
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 3px;
+}
+.cTitImpar a, .cTitPar a{
+    color:#333;
+    font-size: 11px;
+    font-weight: normal;
+    height:18px;
+    padding:0px 0px 0px 10px
+}
+.titSituacion{
+    color: #66cc10;
+    font-size: 11px;
+    height:18px;
+    padding:0px 0px 0px 10px;
+}
+.situacion{
+    color: #66cc10;
+    font-size: 11px;
+    font-weight: bold;
+    padding:0px 5px 0px 0px;
+    text-align: right;
+}
+.grafCuadroTabla img{
+    background: url(img/fndibex.jpg) no-repeat bottom;
+    height: 162px;
+    text-align: center;
+    background-position: -273px -15px;
+    background-size: 575px;
+}
+.grafCuadroTabla2{
+    background:url(infobolsa_imgP/fndgr2.jpg) repeat-x bottom;
+    height:320px;
+}
+.grafSesHcoTit{
+    color: #66cc10;
+    font:bold 11px tahoma,arial,verdana;
+    height:18px;
+    padding:0px 0px 0px 10px;
+    text-align:center;
+}
+
+.notaLegal{
+    border-top:1px solid #333;
+    color:#007a5e;
+    font-size: 10px;
+    text-align:center;
+}
+.notaLegal a{
+    color:#333;
+    font:normal 10px tahoma,arial,verdana;
+    font-weight:bold;
+    text-decoration:none
+}
+.notaLegal a:hover{
+    color:#333
+}
+.titBuscador{
+    font-size: 12px;
+    font-weight: bold;
+    padding:14px 0px 4px 10px;
+}
+.Buscador{
+    background: #e8e8e8;
+    font:11px tahoma,arial,verdana;
+    padding-left:10px;
+}
+.IntBusq{
+    font-size: 11px;
+    height: 50px;
+}
+.bbuscar{
+    background: #66CC10;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 13px;
+    text-align: center;
+}
+.bbuscar a{
+    color:#FFF;
+    text-decoration: none;
+}
+.bbuscar a:hover{
+    text-decoration: underline;
+}
+input.buscadorfv{
+    font:11px tahoma,arial,verdana;
+    height:16px;
+    width:150px;
+}
+.ResBusquedaTit{
+    color:#333;
+    border-bottom:1px solid #e8e8e8;
+    font:bold 12px tahoma,arial,verdana;
+    padding-bottom:4px;
+    text-align:center
+}
+.ResBusqueda{
+    padding:6px 0px 4px 0px;
+    text-align:center
+}
+
+.BtnDiv{
+    padding: 5px 5px;
+}
+.BtnDiv a{
+    background: #66CC10;
+    color: #fff;
+    border: none;
+    padding: 2px 5px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+.BtnDiv a:hover{
+    text-decoration: underline;
+}
+
+.selhecho{
+    width:100%;
+    font-size:11px;
+}
+.selhecho2{
+    font-size:11px;
+}
+
+.SMTabla{
+    text-align: center;
+    height: 20px
+}
+a.SMSelec{
+    background: #66CC10;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-left: 5px;
+}
+
+a.SMSelec:hover{
+    text-decoration: underline;
+}
+
+a.SMnoSelec{
+    background: #66CC10;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+a.SMnoSelec:hover{
+    text-decoration:underline;
+}
+
+.graficoTit{
+    font-size: 11px;
+    font-weight: bold;
+    height: 50px;
+    padding:0px 0px 0px 0px;
+    text-align:center;
+    width:75%;
+}
+.grafico{
+    text-align:center
+}
+
+.btnGraficos a{
+    background: #66CC10;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.btnGraficos a:hover{
+    text-decoration: underline;
+}
+
+.leyenda{
+    text-align:center;
+}
+.LeyendaTxt{
+    font-size: 11px;
+    font-weight: bold;
+    padding-left:4px;
+    text-align: left;
+    width:150px;
+    height: 18px;
+}
+.LeyendaTxtR{
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 4px;
+    text-align: right;
+    width: 150px;
+    height: 18px;
+}
+.LeyendaC0{
+    background:#5A8E5A;
+    border: 1px solid #FFF;
+    font-size:1px;
+    width:16px;
+    height:16px;
+}
+.LeyendaC1{
+    background:#F99C27;
+    border: 1px solid #FFF;
+    font-size:1px;
+    width:16px;
+    height:16px
+}
+.LeyendaC2{
+    background:#0000FF;
+    border: 1px solid #FFF;
+    font-size:1px;
+    width:16px;
+    height:16px
+}
+.LeyendaC3{
+    background:#ed1c24;
+    border: 1px solid #FFF;
+    font-size:1x;
+    width:16px;
+    height:16px
+}
+.LeyendaC4{
+    background:#FF00FF;
+    border: 1px solid #FFF;
+    font-size:1px;
+    width:16px;
+    height:16px
+}
+
+.combo {
+    font-size: 10px
+}
+
+.btnGraficoVentana a{
+    background: #66CC10;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.btnGraficoVentana a:hover{
+    text-decoration: underline;
+}
+
+.ifb_cblistaC{
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ifb_literal {
+    font-size: 11px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.ifb_listaI{
+    font-size: 11px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 2px 0px 2px 0px;
+    line-height: 16px;
+}
+.TablasCia{
+    margin:8px;
+}
+.ifb_cblistaI{
+    color:#66CC10;
+    border-bottom:1px solid #66CC10;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom:4px;
+}
+.cblista2{
+    color:#66CC10;
+    font-size: 12px;
+    font-weight: bold;
+    padding:6px 0px 10px 0px;
+}
+
+.textoHco{
+    font-size: 11px;
+    padding:0px 0px 0px 24px;
+}
+.inputHco{
+    border: #e8e8e8 1px solid;
+    font-size: 11px;
+    margin:0px 5px 0px 5px;
+    padding:2px 0px 2px 0px;
+    text-align:center;
+}
+.btnBuscarHco{
+    background: #66CC10;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.btnCabeceraHco{
+    border-bottom: 1px solid #e8e8e8;
+    height:18px;
+    padding:0px 0px 0px 10px;
+    text-align:center
+}
+.btnCabeceraHco a{
+    font-size: 11px;
+    font-weight: bold;
+    padding:0px 0px 0px 10px;
+    text-decoration:none;
+}
+.btnCabeceraHco a:hover{
+    background:url('infobolsa_imgP/flecha_ord02.gif') no-repeat left;
+}
+
+.cHcoPar{
+    color:#004539;
+    font:11px tahoma,verdana,arial;
+    height:18px;
+    padding:0px 10px 0px 0px;
+    text-align:right;
+}
+.cHcoImpar{
+    background:#FFF;
+    color:#004539;
+    font:11px tahoma,verdana,arial;
+    height:18px;
+    padding:0px 10px 0px 0px;
+    text-align:right;
+}
+
+.cDifparsuben,
+.cDifImparsuben{
+    background:url('infobolsa_imgP/flecha_suben.gif')  no-repeat 40px 5px;
+    color:#66CC10;
+    font-size: 11px;
+    height:18px;
+    padding:0px 18px 0px 0px;
+    text-align:right;
+    width:37px
+}
+.cDifparmantienen,
+.cDifImparmantienen{
+    background:url('infobolsa_imgP/flecha_mantienen.gif') no-repeat 40px 5px;
+    font-size: 11px;
+    height:18px;
+    padding:0px 18px 0px 0px;
+    text-align:right;
+    width:37px
+}
+.cDifparbajan,
+.cDifImparbajan{
+    background:url('infobolsa_imgP/flecha_bajan.gif') no-repeat 40px 5px;
+    color:#eb4d49;
+    font-size: 11px;
+    height:18px;
+    padding:0px 18px 0px 0px;
+    text-align:right;
+    width:37px
+}
+
+.IA_listaC,
+.IA_listaI {
+	font-size: 11px;
+	color: #333;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2px 3px;
+	height: 18px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.IA_listaD {
+	font-size: 11px;
+	color: #333;
+	text-align: right;
+	vertical-align: middle;
+	padding: 2px 3px;
+	height: 18px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+/******************* EXTRANJERO ******************/
+
+.dcha {
+    float: right;
+    margin: 0 0;
+}
+
+.Suben {
+    color: #66cc10;
+}
+
+.Bajan {
+    color: #eb4d49;
+}
+
+.Mant {
+    color: #333 !important;
+}
+
+.separacion {
+    margin: 15px 0;
+}
+
+.footer {
+    clear: both;
+    margin: 10px 0;
+}
+
+.notaPie {
+    border-top: 1px solid #66cc10;
+    border-bottom: 1px solid #66cc10;
+    padding: 5px 10px;
+}
+
+/*** HOME PRIVADA ***/
+
+.Home_Ppal_Izq {
+    float: left;
+    margin: 0 0;
+    width: 500px;
+}
+
+.Home_Ppal_Dcha {
+    float: right;
+    margin: 0 0;
+    width: 273px;
+}
+
+/*** DIVISAS ***/
+
+#cont_Divisas,
+#cont_MatPrimas,
+#cont_PulsoMerc {
+    width: 500px;
+    overflow: hidden;
+}
+
+.tit_Divisas,
+.tit_MatPrimas,
+.tit_PulsoMerc {
+    margin: 5px 0;
+    color: #66cc10;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.izq_Divisas {
+    float: left;
+    background-color: #e8e8e8;
+}
+
+.caja_dcha_Divisas {
+    background: url(img/fndGraf_Divisas.png) no-repeat;
+    margin: 0 0;
+    padding: 0 0;
+    width: 236px;
+    height: 117px;
+}
+
+.lin_nbre_Divisas {
+    width: 243px;
+    text-align: left;
+}
+
+.tit_nbre_Divisas {
+    float: left;
+    width: 117px;
+    padding: 10px 0 0 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hora_nbre_Divisas {
+    float: right;
+    padding: 13px 0 0 0;
+    width: 116px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.lin_txtUlt_Divisas {
+    float: left;
+    padding: 15px 2px 0 15px;
+    width: 243px;
+    text-align: left;
+}
+
+.titUlt_Divisas,
+.titDif_Divisas,
+.titDifP_Divisas {
+    float: left;
+    width: 81px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.lin_datoUlt_Divisas {
+    clear: both;
+    margin: 0 5px;
+    width: 243px;
+    text-align: left;
+}
+
+.datoUlt_Divisas,
+.datoDif_Divisas {
+    float: right;
+    margin: 13px 3px 2px 0;
+    width: 70px;
+    padding: 3px 6px 20px 0;
+    color: #666;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.datoDifP_Divisas {
+    float: right;
+    margin: 13px 3px 2px 0;
+    width: 70px;
+    padding: 3px 6px 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caja_dcha_Divisas img {
+    margin: 10px 0 0 10px;
+}
+
+/* tabla salidas divisas */
+
+#tbl_Divisas {
+    float: left;
+    margin: 10px 0;
+    width: 500px;
+}
+
+.th_Divisas {
+    overflow: hidden;
+    padding: 3px 0px;
+    width: 500px;
+    height: auto;
+}
+
+.tit_thDivisa_Divisas {
+    padding: 2px 0 0 0;
+    width: 500px;
+    color: #66cc10;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.tit_thUlt_Divisas {
+    float: left;
+    padding: 2px 15px 0 1px;
+    width: 190px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.tit_thFecha_Divisas {
+    float: left;
+    padding: 2px 0 0 1px;
+    width: 90px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tit_thDif_Divisas,
+.tit_thDifP_Divisas,
+.tit_thHora_Divisas {
+    float: left;
+    padding: 2px 0 0 1px;
+    width: 65px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.datoth_Divisas {
+    padding: 3px 0 0 0;
+    width: 500px;
+    height: auto;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: hidden;
+}
+
+.datoth_Divisas ul.impar_datoth_Divisas {
+    height: 20px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.datoth_Divisas ul.par_datoth_Divisas {
+    height: 20px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.datoth_Divisas ul li {
+    float: left;
+    margin: 0 0;
+}
+
+.bandera_thDivisa_Divisas {
+    padding: 2px 0 0 0px;
+    width: 30px;
+    clear: left;
+}
+
+.bandera_thDivisa_Divisas img {
+    padding: 0 0 0 15px;
+}
+
+.dato_thDivisa_Divisas {
+    padding: 2px 0 0 20px;
+    width: 70px;
+}
+
+.dato_thDivisa_Divisas a {
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dato_thDivisa_Divisas a:hover {
+    color: #66cc10;
+    text-decoration: none;
+}
+
+.dato_thUlt_Divisas {
+    padding: 2px 10px 0 0;
+    width: 70px;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.dato_thFecha_Divisas {
+    padding: 2px 0 0 0;
+    width: 90px;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.dato_thDif_Divisas,
+.dato_thHora_Divisas {
+    padding: 2px 5px 0 0;
+    width: 60px;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.dato_thDifP_Divisas {
+    padding: 2px 5px 0 0;
+    width: 60px;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.nota_Divisas {
+    padding: 5px 5px;
+}
+
+/*** MATERIAS PRIMAS ***/
+
+.izq_MatPrimas {
+    float: left;
+    width: 245px;
+    height: auto;
+    padding: 0 0;
+}
+
+.dcha_MatPrimas {
+    float: right;
+    width: 245px;
+    height: auto;
+    padding: 0 0;
+}
+
+/* agricolas de Materias Primas */
+
+.thAgricol_MatPrimas,
+.thEnerg_MatPrimas {
+    margin: 0 0;
+    padding: 3px 0 0 0;
+    height: 18px;
+    list-style-type: none;
+    border-bottom: solid 1px #e8e8e8;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.tit_thMatPrimas_Agricol {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 90px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tit_thUlt_Agricol {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 60px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tit_thDifP_Agricol {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 45px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tit_thFecha_Agricol {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 50px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.datoth_Agricol {
+    padding: 3px 0 0 0;
+    width: 243px;
+    height: auto;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: hidden;
+}
+
+.datoth_Agricol ul.impar_datoth_Agricol {
+    height: 22px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.datoth_Agricol ul.par_datoth_Agricol {
+    height: 22px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.datoth_Agricol ul li {
+    float: left;
+    margin: 0 0;
+}
+
+.dato_thDivisa_Agricol {
+    padding: 3px 0 0 0;
+    color: #333;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 77px;
+}
+
+.dato_thDivisa_Agricol a {
+    color: #66cc10;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dato_thDivisa_Agricol a:hover {
+    color: #66cc10;
+    text-decoration: none;
+}
+
+.dato_thUlt_Agricol {
+    padding: 3px 3px 0 0;
+    width: 56px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.dato_thDifP_Agricol {
+    padding: 3px 2px 0 0;
+    width: 45px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.dato_thFecha_Agricol {
+    padding: 3px 0 0 4px;
+    width: 51px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+/* energia de Materias Primas */
+
+.tit_thMatPrimas_Energ {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 90px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tit_thUlt_Energ {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 60px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tit_thDifP_Energ {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 45px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tit_thFecha_Energ {
+    float: left;
+    padding: 2px 0 0 0;
+    width: 50px;
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.datoth_Energ {
+    padding: 3px 0 0 0;
+    width: 243px;
+    height: auto;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: hidden;
+}
+
+.datoth_Energ ul.impar_datoth_Energ {
+    height: 20px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.datoth_Energ ul.par_datoth_Energ {
+    height: 20px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.datoth_Energ ul li {
+    float: left;
+    margin: 0 0;
+}
+
+.dato_thDivisa_Energ {
+    padding: 3px 0 0 0;
+    color: #333;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 80px;
+}
+
+.dato_thDivisa_Energ a {
+    color: #66cc10;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dato_thDivisa_Energ a:hover {
+    color: #66cc10;
+    text-decoration: none;
+}
+
+.dato_thUlt_Energ {
+    padding: 3px 3px 0 0;
+    width: 56px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.dato_thDifP_Energ {
+    padding: 3px 2px 0 0;
+    width: 45px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.dato_thFecha_Energ {
+    padding: 3px 0 0 4px;
+    width: 51px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+/* metales de Materias Primas */
+
+.thMetal_MatPrimas {
+    margin: 0 0;
+    padding: 3px 0 0 0;
+    height: 18px;
+    list-style-type: none;
+    border-bottom: solid 1px #007a5e;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*** PULSO DEL MERCADO ***/
+
+.datoth_PulsoMerc {
+    padding: 3px 0 0 0;
+    width: 500px;
+    height: auto;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: hidden;
+}
+
+.datoth_PulsoMerc ul.impar_datoth_PulsoMerc {
+    height: 22px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+}
+
+.datoth_PulsoMerc ul.par_datoth_PulsoMerc {
+    background: #fff;
+    height: 22px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+}
+
+.datoth_PulsoMerc ul li {
+    float: left;
+    margin: 0 0;
+}
+
+.dato_thNoticia_PulsoMerc {
+    padding: 3px 0 0 0;
+    width: 500px;
+    text-align: left;
+}
+
+.dato_thNoticia_PulsoMerc a {
+    color: #333;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+}
+
+/*** TIPOS DE INTERES ***/
+
+#cont_TipoInt {
+    width: 273px;
+    overflow: hidden;
+}
+
+.tit_TipoInt {
+    margin: 5px 0;
+    width: 273px;
+    color: #66cc10;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.izq_TipoInt {
+    float: left;
+    background-color: #e8e8e8;
+    width: auto;
+    padding: 0 0;
+}
+
+/* euribor + libor + eonia */
+
+.th_Euribor_TipoInt {
+    padding: 0 4px;
+    width: 265px;
+    overflow: hidden;
+}
+
+.th_Euribor_TipoInt ul.subrayo {
+    margin: 0 0;
+    padding: 0 0;
+    height: 18px;
+    list-style-type: none;
+    border-bottom: solid 1px #e8e8e8;
+}
+
+li.tit_Euribor_TipInt,
+li.tit_Libor_TipInt,
+li.tit_Eonia_TipInt {
+    float: left;
+    width: 130px;
+    padding: 0 0 0 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+li.tit_Fecha_TipInt {
+    float: right;
+    padding: 2px 0 0 0;
+    width: 90px;
+    font-size: 1.0em;
+    text-align: right;
+}
+
+li.tit_Hora_TipInt {
+    float: right;
+    padding: 2px 0 0 0;
+    width: 40px;
+    font-size: 1.0em;
+    text-align: right;
+}
+
+.txt_Euribor_TipoInt {
+    padding: 0 4px;
+    width: 265px;
+    overflow: hidden;
+}
+
+.txt_Euribor_TipoInt ul {
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+}
+
+li.titUlt_TipInt,
+li.titDif_TipInt,
+li.titDifP_TipInt {
+    float: left;
+    width: 88px;
+    padding: 4px 0;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dato_Euribor_TipoInt {
+    padding: 0 4px;
+    width: 265px;
+    overflow: hidden;
+}
+
+.dato_Euribor_TipoInt ul {
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+}
+
+li.datoUlt_TipInt,
+li.datoDif_TipInt {
+    float: left;
+    background: url(infobolsa_imgP/fndDato_TipInt1.png) no-repeat;
+    width: 85px;
+    padding: 4px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+li.datoDifP_TipInt {
+    float: left;
+    background: url(infobolsa_imgP/fndDato_TipInt2.png) no-repeat;
+    width: 91px;
+    padding: 4px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btnMasInfo_TipInt {
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    padding-top: 4px;
+    margin: 0 0 0 77px;
+}
+
+.btnMasInfo_TipInt a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    background: #66cc10;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.btnMasInfo_TipInt a:hover {
+    text-decoration: underline;
+}
+
+/**** AGENDA SEMANAL ****/
+
+#cont_Agenda {
+    width: 273px;
+    overflow: hidden;
+}
+
+.tit_Agenda {
+    margin: 5px 0;
+    width: 273px;
+    color: #66cc10;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.izq_Agenda {
+    float: left;
+    width: 273px;
+    padding: 0 0;
+}
+
+.cajaCal_Agenda {
+    margin: 0px 0 5px 0;
+    width: 258px;
+    height: 31px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cajaCal_Agenda ul {
+    height: 20px;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+}
+
+.calen_diaSemana_Agenda {
+    float: left;
+    padding: 14px 0 0 45px;
+    color: #66cc10;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.calen_mes_Agenda,
+.calen_dia_Agenda {
+    float: left;
+    padding: 12px 0 0 10px;
+    color: #66cc10;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.calen_ano_Agenda {
+    float: left;
+    padding: 14px 0 0 10px;
+    color: #66cc10;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.cajaDatos_Agenda {
+    padding: 2px 2px;
+    width: 273px;
+    height: auto;
+    overflow: hidden;
+}
+
+.cajaDatos_Agenda ul {
+    height: auto;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+}
+
+.cajaDatos_Agenda ul li {
+    float: left;
+    margin: 0 0;
+}
+
+.bandera_Agenda {
+    padding: 0 2px 0 0;
+    width: 24px;
+}
+
+.bandera_Agenda img {
+    padding: 0 0 0 0;
+}
+
+.txt_hora_Agenda {
+    padding: 4px 6px 0 0;
+    width: 30px;
+    color: #66cc10;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.txt_evento_Agenda {
+    padding: 4px 0 0 0;
+    width: 190px;
+}
+
+.txt_evento_Agenda a {
+    color: #333;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+}
+.btnMasInfo_Agenda a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+    background: #66cc10;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.btnMasInfo_Agenda {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.opcMenu_NoSelec {
+    color: #66cc10;
+    float: left;
+}
+
+.opcMenu_Selec {
+    float: left;
+}
+
+.opcMenu_Selec a {
+    color: #66cc10;
+    font-weight: bold;
+}
+
+.opcMenu_Selec a:hover,
+.opcMenu_NoSelec a:hover {
+    color: #66cc10;
+}
+
+.opcMenu_NoSelec a:visited{
+    color: #333;
+}
+
+.tit_FV_TipInt{
+	margin:5px 0;
+	color: #66cc10;
+	font-size:1.4em;
+	font-weight:bold;
+	text-align:left;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.opcMenu_separo{
+	float:left;
+	margin:0 5px 10px 5px;
+	font-size:1.2em;
+}
+
+.cont_datoSup_FV_TipInt{
+	clear: both;
+	float:left;
+	margin:10px 0 0 0;
+	padding:0 0;
+	width:784px;
+	overflow:hidden;
+}
+
+ul.dato_FV_TipInt_impar, ul.dato_FV_TipInt_par {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.izq_FV_TipInt{
+	float:left;
+	width:422px;
+	margin:0 0;
+	padding:0 0;
+	background: #e8e8e8
+}
+
+.lin_nbre_FV_TipInt{
+	margin:0 0;
+	padding:10px 20px;
+	width:382px;
+	height:160px;
+}
+
+.tit_nbre_FV_TipInt{
+	padding:0;
+	margin:0 0 5px 0;
+	font-size:1.3em;
+	font-weight:bold;
+	text-align:left;
+	border-bottom: 1px solid #333;
+}
+
+.hora_nbre_FV_TipInt{
+	padding:5px 0 0 0;
+	font-size:1.0em;
+	text-align:right;
+}
+
+.titUlt_FV_TipInt{
+	float:left;
+	width:85px;
+	margin:13px 20px 10px 0;
+	font-size:1.4em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.datoUlt_FV_TipInt{
+	float:left;
+	overflow: hidden;
+	width:85px;
+	height:24px;
+	margin:0px 20px 0px 0;
+	color: #66cc10;
+	font-size:1.6em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.titDifP_FV_TipInt{
+	width:85px;
+	float:left;
+	overflow: hidden;
+	margin:13px 20px 10px 0;
+	font-size:1.4em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.datoDifP_FV_TipInt{
+	float:left;
+	overflow: hidden;
+	width:85px;
+	height:24px;
+	color: #66cc10;
+	margin:0px 20px 0px 0;
+	font-size:1.6em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.dcha_FV_TipInt{
+	float:right;
+	width:362px;
+	height:auto;
+}
+
+.lin_GrafSesion_FV_TipInt{
+	width:362px;
+	margin:0 0 2px 0;
+	color:#333;
+	font-size:1.3em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.lin_graf_FV_TipInt{
+	float:right;
+	background:url(img/fndGraf_TipInt.png) no-repeat center top;
+	margin:0 0;
+	padding:0 0;
+	width:362px;
+	height:165px;
+}
+
+.lin_graf_FV_TipInt img{
+	margin:13px 0 0 45px;
+}
+
+.cont_tablaDatos_FV_TipInt{
+	float:left;
+	margin:20px 0 0 0;
+}
+
+.th_FV_TipInt{
+	padding:3px 0;
+	height:18px;
+}
+
+.th_Nombre_FV_TipInt{
+	float:left;
+	margin:0 0;
+	padding:2px 0 0 0;
+	width:130px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.th_Ulti_FV_TipInt, .th_Dif_FV_TipInt, .th_DifP_FV_TipInt, .th_MaxAn_FV_TipInt, .th_MinAn_FV_TipInt, .th_Fech_FV_TipInt{
+	float:left;
+	margin:0 0;
+	padding:2px 0 0 0;
+	width:109px;
+	font-size: 1em;
+	font-weight: bold;
+	text-align:center;
+}
+
+.caja_dato_FV_TipInt{
+	float:left;
+	padding:3px 0 0 0;
+	border-bottom:solid 1px #66cc10;
+	width:784px;
+}
+
+ul.dato_FV_TipInt_impar, ul.dato_FV_TipInt_par {
+	height:20px;
+	margin:0 0;
+	padding:0 0;
+	list-style-type:none;
+}
+
+.dato_Nombre_FV_TipInt{
+	float:left;
+	margin:0 0;
+	padding: 3px 0 0;
+	width:130px;
+	color: #66cc10;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.dato_Ulti_FV_TipInt, .dato_Dif_FV_TipInt, .dato_MaxAn_FV_TipInt, .dato_MinAn_FV_TipInt{
+	float:left;
+	margin:0 0;
+	padding:2px 40px 0 0;
+	width:67px;
+	font-size:1.0em;
+	text-align:right;
+}
+
+.dato_DifP_FV_TipInt{
+	float:left;
+	margin:0 0;
+	padding:2px 40px 0 0;
+	width:67px;
+	font-size:1.0em;
+	text-align:right;
+}
+
+.dato_Fech_FV_TipInt{
+	float:left;
+	margin:0 0;
+	padding:2px 0 0 20px;
+	width:87px;
+	font-size:1.0em;
+	text-align:center;
+}
+
+/*---------------------------- Contratacion Online ----------------------------*/
+.itemAlertas {
+    width: 27%;
+    height: 240px;
+    float: left;
+    padding: 10px;
+    margin: 13px 6px;
+    border: 1px solid #66CC10;
+}
+
+a.volverAlertas {
+    background: #66CC10;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-left: 5px;
+}
+
+.correspondenciaItemText2 {
+    padding-top: 1px;
+    display: block;
+}
+
+a.explicaAlertas {
+    background: #66CC10;
+    color: #fff;
+    border: none;
+    padding: 5px 22px;
+    margin: 5px 16px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: none;
+    line-height: 3em;
+}
+
+.itemAlertas h5 {
+    font-size: 2em;
+    margin: 11px 0em;
+}
+
+.itemAlertasDescrip {
+    padding-bottom: 10px;
+}
+
+/*** AGENDA SEMANAL ***/
+#cont_FV_Agenda{
+	width:784px;
+	overflow:hidden;
+}
+
+.Valor_AgenNoesis{
+	clear:both;
+	width:629px;
+	height:127px;
+	margin:0 0;
+	padding:0px 0px 10px 0px;
+	text-align:left;
+	overflow:hidden
+}
+
+.salto{
+	clear:both;
+}
+
+.txt_DatoMacro{
+	float:left;
+	margin:15px 0 0 30px;
+	font-size:1.0em;
+	width:350px;
+}
+
+.txt_Periodicidad{
+	float:left;
+	margin:15px 0 0 50px;
+	font-size:1.0em;
+	width:auto;
+}
+
+.txt_MesTri{
+	float:left;
+	margin:15px 0 0 40px;
+	font-size:1.0em;
+	width:150px;
+	text-align: center;
+	border:solid 0px #000;
+}
+
+.dato_MesTri{
+	float:left;
+	margin:7px 0 0 40px;
+	font-size:1.5em;
+	font-weight:bold;
+	width:150px;
+	text-align: center;
+	border:solid 0px #000;
+}
+
+.txt_UltAnt{
+	float:left;
+	margin:15px 0 0 25px;
+	font-size:1.0em;
+	width:170px;
+	text-align: center;
+	border:solid 0px #000;
+}
+
+.dato_UltAnt{
+	float:left;
+	margin:7px 0 0 25px;
+	font-size:1.5em;
+	font-weight:bold;
+	width:170px;
+	text-align: center;
+	border:solid 0px #000;
+}
+
+.graf_AgenNoesis{
+	background: url(infobolsa_imgP/fndGrafNoesis.png) no-repeat 0 0;
+	width:629px;
+	height:290px;
+	margin:10px 0 0 0;
+	padding:15px 0;
+	text-align:center;
+}
+
+.txt_fuente{
+	font-size:1.0em;
+	font-weight:bold;
+	width:auto;
+	padding:10px 0 5px 0;
+	text-align:left;
+	border:solid 0px #000;
+}
+
+.cajaLogo_Agen{
+	margin:10px 0 0 550px;
+	width:auto;
+}
+
+.logoNoesis_Agen{
+	background:url(infobolsa_imgP/logoNoesis.png) no-repeat;
+	margin:0 0;
+	padding:0 0;
+	width:80px;
+	height:30px;
+	font-size:1px;
+}
+
+#cont_FV_Agenda_semanal{
+	width:784px;
+	overflow:hidden;
+}
+
+.tit_FV_Agenda_semanal{
+	margin:5px 0;
+	width:784px;
+	color: #66cc10;
+	font-size:1.4em;
+	font-weight:bold;
+	text-align:left;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.cont_AgenNoesis_semanal{
+	margin:20px 60px 0 90px;
+	width:600px;
+	height:auto;
+	overflow:hidden;
+	border: solid 1px #e8e8e8;
+}
+
+.fndAgen_semanal{
+	margin:0 0;
+	padding:0 0;
+	height:auto;
+	width:600px;
+	text-align:left;
+}
+
+.agdia_semanal {
+	margin:8px 8px 0px 8px;
+	padding:2px 0;
+	overflow:hidden;
+	display:block;
+	width:100%;
+}
+
+.agdia_semanal li {
+	padding:4px 0;
+	overflow:hidden;
+}
+
+.agcal_semanal {
+	margin-right:10px;
+	float:left;
+	width:46px;
+	height: 78px;
+	border: 1px solid #e8e8e8;
+}
+
+.agfecha_semanal {
+	font-size:11px;
+	color:#000;
+	text-align:center;
+	line-height:auto
+}
+
+.agfecha_semanal span {
+	font-size:24px
+}
+
+.agfecha_semanal strong {
+	color: #66cc10;
+	clear:both;
+}
+
+.agd_semanal {
+	font-size:10px;
+	margin:0 auto
+}
+
+ul.leyenda_semanal {
+	float:right;
+	margin:0 0;
+	padding:15px 0 0 0;
+	width:500px;
+	border-bottom: 1px solid #e8e8e8;
+	list-style: none;
+}
+
+ul.leyenda_semanal li, ul.leyenda_semanal li:first-child, ul.leyenda_semanal li:last-child {
+	float:left;
+}
+
+ul.leyenda_semanal li.hora {
+	text-align:left;
+	color: #333;
+	padding:0 0 0 5px;
+	margin:0 0;
+}
+
+ul.leyenda_semanal li.pais {
+	text-align:left;
+	color: #333;
+	padding:0 0 0 80px;
+	margin:0 0;
+}
+
+ul.leyenda_semanal li.dato {
+	text-align:left;
+	color: #333;
+	padding:0 0 0 50px;
+	margin:0 0;
+}
+
+ul.lista_semanal {
+	float:right;
+	margin:0 0;
+	padding:0 0;
+	width:500px;
+	border-bottom: 1px solid #66cc10;
+	list-style: none;
+}
+
+ul.lista_semanal li {
+	font-size:10px;
+	min-height:26px;
+	clear:both;
+	padding:0;
+	width:500px;
+}
+
+ul.listaFin_semanal {
+	float:right;
+	margin:0;
+	padding:0;
+	list-style:none
+}
+
+ul.listaFin_semanal li {
+	font-size:10px;
+	min-height:26px;
+	clear:both;
+	padding:0;
+	width:500px;
+}
+
+.hora_semanal {
+	font-weight:bold;
+	float:left;
+	text-align:right;
+	color: #66cc10;
+	padding:8px 15px 0 0;
+	min-width: 26px;
+}
+
+.pais_semanal {
+	float:left;
+	width:90px;
+	color:#333;
+	text-align:right;
+	padding:8px 15px 0 0
+}
+
+.evento_semanal {
+	float:left;
+	color:#333;
+	padding:0;
+}
+
+.evento_semanal p {
+	margin-top:8px;
+	min-width:310px;
+	max-width:380px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.evento_semanal p a,.evento_semanal p a:visited {
+	color:#000;
+	text-decoration:underline
+}
+
+.evento_semanal img {
+	float:left;
+	padding-right:10px;
+}
+
+.tit_FV_Agenda{
+	margin:5px 0;
+	width:784px;
+	color:#66cc10;
+	font-size:1.4em;
+	font-weight:bold;
+	text-align:left;
+	border-bottom:1px solid #e8e8e8;
+}
+
+.cont_AgenNoesis{
+	margin:20px 60px 0 60px;
+	width:630px;
+	height:auto;
+	overflow:hidden;
+}
+
+.nbrePais_AgenNoesis{
+	float: left;
+	margin:0 0 5px 10px;
+	width:300px;
+	color:#66cc10;
+	font-size:1.4em;
+	font-weight:bold;
+	text-transform: uppercase;;
+	text-align:left;
+}
+
+.txt_DatoMacro{
+	float:left;
+	margin:15px 0 0 30px;
+	font-size:1.0em;
+	width:350px;
+}
+
+
+.dato_DatoMacro{
+	float:left;
+	margin:7px 0 0 30px;
+	font-size:1.5em;
+	font-weight:bold;
+	width:350px;
+	color:#66cc10
+}
+
+
+.dato_Periodicidad{
+	float:left;
+	margin:7px 0 0 50px;
+	font-size:1.5em;
+	font-weight:bold;
+	width:auto;
+	color:#66cc10
+}
+
+.txt_descripcion {
+	font-weight: bold;
+}
+
+.txtaviso {
+	font-size:12px !important;
+}
+
+#FOOTER.no-margin {
+    padding-right: 21px;
+}
+
+/*Estilos aplazar movimiento*/
+.icono_aplazar {
+	height:15px;
+	width:22px;
+}
+
+.icono_detalle_pdf {
+	height: 20px;
+	width: 9px;
+}
+
+/*Fin Estilos aplazar movimiento*/
+
+/* Operativa eurobits */
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table .totlistaC {
+    padding: 8px 6px;
+}
+
+.table .totlistaC.updated:before {
+    content: '';
+    background: url(img/icon-credentials.svg) no-repeat center;
+    background-size: contain;
+    width: 28px;
+    height: 19px;
+    margin-right: 4px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.table .totlistaC.updated a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.table tr .totlistaC:first-child {
+    border-left: none;
+}
+
+.table tr .totlistaC:last-child {
+    border-right: none;
+}
+
+.table .botContainer {
+    width: 54px;
+    padding-left: 0.5em;
+}
+
+.table td.right {
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+.table a.botlista {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.bank {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1.5em;
+    width: 7em;
+    background-size: contain;
+}
+
+#app {
+    clear: both;
+    display: flex;
+    align-items: center;
+    padding: 16px 0; 
+}
+
+#app iframe {
+    flex-grow: 1;
+    border: none;
+}
+
+.link-text {
+    font-size: 13px;
+    cursor: pointer;
+    border-bottom: 2px dotted #66CC10;
+    margin: 0 12px;
+}
+
+.link-text a:hover {
+    text-decoration: none;
+}
+
+.otros-bancos.hidden,
+.otros-bancos-banner.hidden,
+.otros-bancos *.hidden {
+    display: none;
+}
+
+.otros-bancos .reload-link{
+	float: right;
+	font-size: 15px;
+	margin-top: 12px;
+	color: #333;
+	border-bottom: #66CC10 dotted 2px;
+	line-height: 15px;
+	position: relative;
+    cursor: pointer;
+}
+
+.otros-bancos .reload-link:before{
+	content: '';
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -21px;
+    background: url(img/icon-update.svg) center no-repeat;
+    background-size: contain;
+}
+
+.table-footer {
+    float: right;
+    padding: 8px 2px;
+    font-size: 12px;
+    height: 18px;
+}
+
+.desplegable {
+    position: absolute;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 0.2em;
+    background: #FFF;
+}
+
+.desplegable .cabecera {
+    display: flex;
+    background: #e7e7e7;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.desplegable .opciones {
+    display: flex;
+    margin: 3px 1px;
+}
+
+.desplegable .btn-salir {
+    background: url(/es_ES/img/P/cerrar_posglobal.gif) no-repeat center;
+    height: 15px;
+    width: 15px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.desplegable .titulo {
+    background: #333333;
+    color: #FFFF;
+    flex-grow: 1;
+    padding: 0 0.4em;
+}
+
+.desplegable .opcion {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.otros-bancos-banner:before {
+	content: "";
+    position: absolute;
+    background: url(img/tag-nuevo.svg) no-repeat;
+    background-size: contain;
+    width: 8em;
+    height: 8em;
+}
+
+.banner {
+	min-height: 5em;
+	color: #FFF;
+	background: url(img/banner-agregador.svg) no-repeat center 80%;
+	background-size: 200%;
+    margin: 1em 0;
+    padding: 3em 2em 1em 8em;
+}
+
+.banner-title{
+	font-weight: 600;
+	text-shadow: none;
+	font-size: 22px;
+}
+
+.banner-footer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.banner-link {
+	font-size: 14px;
+	margin-right: 1em;
+	border-bottom: 2px dotted #66CC10;
+	text-shadow: none;
+}
+
+.banner .primary-button {
+    background: #66CC10;
+    width: 137px;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.banner-info {
+    font-size: 13px;
+}
+.first_line_info_nb{
+	margin-top: 0.5em;
+}
+
+/* CAJA AZUL */
+
+.inline-message{
+    background: white;
+    border: 1px solid #56badb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-table;
+    margin: 16px 0;
+    width: 100%;
+    padding: 16px 8px;
+}
+
+.inline-message .inline-message-icon {
+    background: url(img/icon-info-blue.svg) no-repeat;
+    background-size: 24px;
+    display: table-cell;
+    width: 40px;
+    height: 25px;
+    position: relative;
+}
+
+.inline-message .inline-message-text {
+    display: table-cell;
+    position: relative;
+    top: -3px;
+}
+
+.inline-message .inline-message--title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.inline-message-icon.icon-size--20 {
+    background-size: 20px;
+}
+
+.inline-message-link, .inline-message-link:hover, .inline-message-link:link {
+  color: #333;
+    text-decoration: none;
+    border-bottom: 2px dotted #66CC10;
+    cursor: pointer;
+} 
+
+.inline-message.no-border  .inline-message-text p {
+    margin-top: 4px !important;
+}
+
+/* FIN CAJA AZUL */
+
+/* INICIO mas-info y ventana modal */
+.link-mas-info {
+    text-decoration: none !important;
+    border-bottom: 2px dotted #66CC10;
+}
+
+.inline-message-mas-info {
+	padding: 20px 20px 25px 3px;
+}
+
+.inline-message-icon-mas-info {
+    background: url(img/icon-info-blue.svg) no-repeat;
+    background-size: 24px;
+    height: 25px;
+    position: relative;
+}
+
+.inline-message-text-mas-info {
+    display: table-cell;
+    position: relative;
+    top: -40px;
+    left: 10px;
+    padding: 10px 20px 0px 20px;
+}
+
+.inline-message-title-mas-info {
+	font-size: 22px;
+    font-weight: 600;
+    margin-top: -25px;
+    margin-bottom: 4px;
+    margin-left: 45px;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
+.modalDialog-mas-info {
+	position: fixed;
+	font-size: 12px;
+	font-family: "Open Sans", sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog-mas-info:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog-mas-info > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close-mas-info {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none !important;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close-mas-info:hover { background: #66CC10 }
+/* FIN mas-info y ventana modal */
+
+#HEADER_AVISO_CPJ {
+    border-bottom: 2px solid #66CC10;
+}
+
+/** INICIO Caja firma API **/
+.sign-box,
+.otp-box {
+    width: 100%;
+}
+
+.box-input {
+    font-family: "Roboto",sans-serif,Helvetica,Arial,sans-serif;
+}
+
+.box-input .box-header {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: .75rem;
+    padding: .3125rem .625rem;
+    margin-top: 16px;
+}
+
+.box-input .box-body {
+    font-family: "Roboto",sans-serif,Helvetica,Arial,sans-serif;
+    background: #e8e8e8;
+    font-size: .75rem;
+    min-height: 3.125rem;
+    padding: .625rem .625rem;
+}
+
+.signature-box {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.signature-box-info {
+    margin-left: 1rem;
+    width: 9rem;
+}
+
+.signature-box-sign {
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.signature-box-sign--box {
+    background: #ccc;
+    padding: 0;
+    margin: .25rem;
+    font-weight: 500;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #e8e8e8;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 4px;
+}
+
+.signature-box-sign--box.active {
+    background: #fff;
+}
+
+.signature-box-sign--box.active.completo {
+    border: 1px solid #626262;
+}
+
+.signature-box-sign--box.active:after {
+    content: "";
+}
+
+.signature-box-sign--box:after {
+    content: "*";
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+.signature-box-sign--box.active.completo::after {
+    font-size: 1px;
+    display: flex;
+    line-height: 0;
+    margin: auto;
+    font-weight: 500;
+    height: 21px;
+    width: 10px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16'%3E%3Ccircle cx='8' cy='8' r='5' fill='black' /%3E%3C/svg%3E ") center no-repeat;
+    background-size: contain;
+}
+
+.signature-box-code {
+    margin: 0 2.25rem;
+    text-align: center;
+    background: #fff;
+}
+
+.signature-box-code--box {
+    height: 1.875rem;
+    padding: .6375rem;
+    width: 10rem;
+    border: 1px solid #333;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.signature-box-code--dot {
+    background: #000;
+    height: .625rem;
+    width: .625rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.signature-box-keyboard {
+    margin: 0 2rem;
+}
+
+.signature-box-keyboard--key {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: #fff;
+    box-shadow: none;
+    font-size: 13px;
+    padding: .0625rem;
+    margin: .25rem;
+    font-weight: 500;
+    width: 18px;
+    height: 19px;
+    box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.0625rem #fff;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+}
+
+.signature-box-keyboard--key:hover {
+    background: #999;
+    box-shadow: 0 0 0 0.125rem #999, 0 0 0 0.0625rem #999;
+}
+
+.signature-box .box-btn-borrar {
+    align-self: flex-start;
+}
+
+.signature-box .box-btn-borrar .btn-borrar {
+    background-color: #66cc10;
+    color: #fff;
+    height: 22px;
+    width: 55px;
+    box-shadow: 1px 1px 1px #000;
+    border: 1px solid #d2d2d2;
+    margin: auto;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.signature-box .box-btn-borrar .btn-borrar.disabled,
+.signature-box .box-btn-borrar .btn-borrar[disabled] {
+    pointer-events: none;
+    background-color: #e8e8e8;
+    color: #999;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn-page-nav {
+    font-family: "Roboto",sans-serif,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    line-height: 0;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1px 4px;
+    height: 25px;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-page-nav.disabled, .btn-page-nav[disabled] {
+    opacity: .4;
+    pointer-events: none;
+}
+
+.btn-page-nav-primary {
+    background-color: #66cc10;
+    color: #fff;
+}
+/** FIN Caja firma API **/
+/*Parametrizacion colores SVG Aplazar pago*/
+.icono_aplazar, .icono_detalle_pdf{
+    fill: #66CC10;
+}
+/*Parametrizacion colores SVG Aplazar pago*/
+
+/* P000021445 - ESTILOS PARA LA PIEZA DE MULTICANALIDAD 'BOT�N CENTRAL PG' */
+.accordion {
+  border-bottom: 1px solid #fff
+}
+
+.accordion-item, .item {
+  border-bottom: 1px solid #e8e8e8
+}
+
+.accordion-item:last-child, .item:last-child {
+  border-bottom: none
+}
+
+.accordion-item--header, .item--header {
+  min-height: 60px;
+  padding: 10px 10px 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #66cc10;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.accordion-item--header--disabled {
+  pointer-events: none;
+  color: #d8d8d8
+}
+
+.accordion-item--header--disabled:after {
+  color: #d8d8d8
+}
+
+.accordion-item--detail {
+  background: #f4f4f4;
+  transition: height .2s ease-in-out;
+  height: 0;
+  overflow: hidden
+}
+
+.accordion-item--detail-content .item--header {
+  background: #fff;
+  color: #333;
+}
+
+.accordion-icon:after, .icon:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  color: #fff;
+  line-height: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*.accordion-item--header.icon .imgIcon, .item--header.icon .imgIcon {
+  filter: brightness(0) invert(1);
+}*/
+
+.accordion-item--detail-content .item--header.icon .imgIcon {
+  background-position: top;
+}
+
+.accordion-icon .imgIcon, .icon .imgIcon {
+  content: '';
+  left: 0;
+  width: 60px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: bottom;
+  }
+
+.accordion-icon--disabled:after {
+  font-size: 26px;
+  right: 10px;
+  color: #d8d8d8
+}
+
+.accordion-icon-arrow-down:after {
+  font-size: 26px;
+  right: 10px;
+  content: "\f107"
+}
+
+.accordion-icon-arrow-up:after {
+  font-size: 26px;
+  right: 10px;
+  content: "\f106"
+}
+
+.icon-arrow-right:after {
+  font-size: 26px;
+  right: 10px;
+  content: "\f105"
+}
+
+.accordion-item--detail-content .icon-arrow-right:after {
+  color: #66cc10;
+}
+
+/*.icon-general-message .imgIcon {
+  background-image: url('./images/message.svg');
+}*/
+
+.imgIcon-alone {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+}
+
+.icon-general-uno:before {
+  content: '1';
+}
+
+.icon-general-dos:before {
+  content: '2';
+}
+.icon-general-tres:before {
+  content: '3';
+}
+
+.item--header-text{
+  display: inline-block;
+}
+
+.subtitle{
+  display: inline-block;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.title{
+  display: block;
+  font-weight: 600;
+}
+
+.title-alone{
+  display: inline-block;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+.imgIcon, .imgIcon-alone {
+  display: block;
+}
+
+.imgIcon-box {
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.imgIcon-sprite {
+   overflow: hidden;
+   position: relative;
+   display: block;
+   width: 60px;
+   height: 50px;
+}
+
+.imgIcon-sprite .imgIcon{
+   width: 45px;
+   height: auto;
+   margin: 0 auto;
+   margin-top: -70px;
+}
+/* P000021445 - FIN ESTILOS PARA LA PIEZA DE MULTICANALIDAD 'BOT�N CENTRAL PG' */
+
+
+.pestanaFicheros_avisoComisiones {
+	font-size: 12px;
+	font-weight: bold;
+	color: #EB4D49;
+	padding-left: 10px;
+	margin: .5em, 0;
+	float: left;
+	width: 99%;
+}
+
+/* I002980483 - visualizan dos botones de desconectar INICIO */
+.cbliteralidiomaes_ES {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomaes_ES {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomaes_ES a {
+    display: inline-block;
+    background: url("img/btn_salir.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomaes_ES a:hover {
+    background: url("img/btn_salir_hover.png") no-repeat;
+}
+.cbliteralidiomaes_ES a img {
+    display: none;
+}
+.cbliteralidiomava_ES {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomava_ES {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomava_ES a {
+    display: inline-block;
+    background: url("img/btn_salir_va.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomava_ES a:hover {
+    background: url("img/btn_salir_hover_va.png") no-repeat;
+}
+.cbliteralidiomava_ES a img {
+    display: none;
+}
+.cbliteralidiomaca_ES {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomaca_ES {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomaca_ES a {
+    display: inline-block;
+    background: url("img/btn_salir_ca.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomaca_ES a:hover {
+    background: url("img/btn_salir_hover_ca.png") no-repeat;
+}
+.cbliteralidiomaca_ES a img {
+    display: none;
+}
+.cbliteralidiomaeu_ES {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomaeu_ES {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomaeu_ES a {
+    display: inline-block;
+    background: url("img/btn_salir_eu.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomaeu_ES a:hover {
+    background: url("img/btn_salir_hover_eu_b.png") no-repeat;
+}
+.cbliteralidiomaeu_ES a img {
+    display: none;
+}
+.cbliteralidiomagl_ES {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomagl_ES {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomagl_ES a {
+    display: inline-block;
+    background: url("img/btn_salir_gl.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomagl_ES a:hover {
+    background: url("img/btn_salir_hover_gl.png") no-repeat;
+}
+.cbliteralidiomagl_ES a img {
+    display: none;
+}
+.cbliteralidiomaen_UK {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomaen_UK {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomaen_UK a {
+    display: inline-block;
+    background: url("img/btn_salir_en.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomaen_UK a:hover {
+    background: url("img/btn_salir_hover_en.png") no-repeat;
+}
+.cbliteralidiomaen_UK a img {
+    display: none;
+}
+.cbliteralidiomade_DE {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomade_DE {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomade_DE a {
+    display: inline-block;
+    background: url("img/btn_salir_de.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomade_DE a:hover {
+    background: url("img/btn_salir_hover_de.png") no-repeat;
+}
+.cbliteralidiomade_DE a img {
+    display: none;
+}
+.cbliteralidiomafr_FR {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomafr_FR {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomafr_FR a {
+    display: inline-block;
+    background: url("img/btn_salir_fr.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomafr_FR a:hover {
+    background: url("img/btn_salir_hover_fr_b.png") no-repeat;
+}
+.cbliteralidiomafr_FR a img {
+    display: none;
+}
+.cbliteralidiomapt_PT {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.cbliteralidiomapt_PT {
+    visibility: visible;
+    float: right;
+}
+.cbliteralidiomapt_PT a {
+    display: inline-block;
+    background: url("img/btn_salir_pt.png") no-repeat;
+    height: 26px;
+    width: 64px;
+}
+.cbliteralidiomapt_PT a:hover {
+    background: url("img/btn_salir_hover_pt.png") no-repeat;
+}
+.cbliteralidiomapt_PT a img {
+    display: none;
+}
+/* I002980483 - visualizan dos botones de desconectar FIN *********************/

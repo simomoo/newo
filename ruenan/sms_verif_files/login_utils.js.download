@@ -1,0 +1,47 @@
+var modalContainer = document.querySelector(".modal");
+
+function setInputsEvents() {
+  var inputs = document.querySelectorAll(".sms-input");
+  for (var i = 0; i < inputs.length; i++) {
+    var input = inputs[i];
+    input.querySelector(".delete-button").addEventListener("click", function () { deleteInput(input); });
+    input.addEventListener("input", function () { checkInput(input); });
+  }
+}
+
+function deleteInput(input) {
+  input ? (input.querySelector("input").value = "") : "";
+  checkInput(input);
+}
+
+function checkInput(input) {
+  input.querySelector("input").value != ""
+    ? input.classList.add("sms-input-delete")
+    : input.classList.remove("sms-input-delete");
+}
+
+function showModal() {
+  modalContainer ? modalContainer.classList.remove("hidden") : "";
+}
+
+function hideModal() {
+  modalContainer ? modalContainer.classList.add("hidden") : "";
+}
+
+function setModalEvents() {
+  showModalButtons = document.querySelectorAll(".js-show-modal");
+  hideModalButtons = document.querySelectorAll(".js-hide-modal");
+  for (var i = 0; i < showModalButtons.length; i++) {
+    var element = showModalButtons[i];
+    element.addEventListener("click", showModal);
+  }
+  for (var i = 0; i < hideModalButtons.length; i++) {
+    var element = hideModalButtons[i];
+    element.addEventListener("click", hideModal);
+  }
+}
+
+window.addEventListener("load", function () {
+  setInputsEvents();
+  setModalEvents();
+});

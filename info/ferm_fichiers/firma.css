@@ -1,0 +1,216 @@
+@font-face {
+	font-family: opensans_regular;
+	src: url(./../fonts/OpenSans/opensans-regular-webfont.woff2) format("woff2"),url(./../fonts/OpenSans/opensans-regular-webfont.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:opensans_bold;src:url(./../fonts/OpenSans/opensans-bold-webfont.woff2) format("woff2"),url(./../fonts/OpenSans/opensans-bold-webfont.woff) format("woff");font-weight:400;font-style:normal;
+}
+
+@font-face {
+	font-family:opensans_italic;src:url(./../fonts/OpenSans/opensans-italic-webfont.woff2) format("woff2"),url(./../fonts/OpenSans/opensans-italic-webfont.woff) format("woff");font-weight:400;font-style:normal;
+}
+body {
+	font-family: opensans_regular;
+}
+/*Contenedor global*/
+.firma-body {
+	background-color: #e9e9e9 !important;
+	width: 100% !important;
+}
+
+.wr-activacion {
+	background-color: #fff;
+	font-family: opensans_regular,sans-serif;
+	padding:1% 2%;
+	margin-top:1%;
+}
+
+/*Estilos panel de activacion*/
+.content-panel-activacion {
+	display: none;
+}
+
+.detalles-tarjeta div{
+	font-weight:700;
+}
+
+.detalles-tarjeta span{
+	font-weight: 100;
+} 
+
+.activacion-mensaje {
+	border: 1px solid;
+	border-radius: 4px;
+	margin-bottom: 5%;
+	padding-top: 3%;
+	text-align: center;
+	margin-top: 5%;
+	padding-bottom: 1%;
+}
+
+.activacion-firma{
+	border: 1px solid;
+	border-radius: 4px;
+	margin-bottom: 5%;
+	padding-top: 3%;
+	/* text-align: center; */
+	margin-top: 2%;
+	padding: 4%;
+}
+
+.btn-firma{
+	margin: 0px auto;
+	width: 246px
+}
+.btn-firma .col-btn-firma {
+	display:block;
+	width: 100%;
+}
+.btn-pad {
+	background: #dcdcdc;
+	margin: 4px;
+	box-shadow: 0px 2px 0px #b0b0b0;
+	font-weight: bold;
+	font-size: 17px;
+	width: 41px;
+	float: left;
+}
+
+.cajon-firma{
+	margin-top: 4%;
+}
+
+.texto-firma{
+	margin-left: 110px;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+.ayuda-firma{
+	float:left;
+	margin-top: 12%;
+	margin-left: 40px;
+}
+
+
+
+
+.coordenadas-resultados .btn.btn-borrar{
+	margin-top: 20px;
+}
+.coordenadas-resultados .num-coordenada:after {
+	content: '*';
+	position: absolute;
+	/* top: -11px;
+	   left: 3px; */
+	   
+	/* ADMIN */
+	top: -7px;
+	left: 5px;
+}
+.coordenadas-resultados .num-coordenada {
+	height: 100%;
+	border: 1px solid #999999;
+	border-radius: 4px;
+	position: relative;
+	padding: 2%;
+	display: inline-block;
+	/*
+	width: 24px;
+	height: 24px;
+	*/
+	width: 15px;
+	height: 15px;
+	font-size: 30px;
+	position: relative;
+	margin-right: 3px;
+	background-color: #dcdcdc;
+	line-height: 1.84615385;
+}
+.coordenadas-resultados .num-coordenada.active {
+	background-color: transparent;
+}
+.coordenadas-resultados .num-coordenada.active:after {
+	content:'';
+}
+.coordenadas-resultados .num-coordenada.active.completo {
+	height: 100%;
+	border: 1px solid #999999;
+	border-radius: 4px;
+	position: relative;
+	padding: 2%;
+	display: inline-block;
+	/*
+	width: 24px;
+	height: 24px;
+	*/
+	width: 15px;
+	height: 15px;
+	font-size: 40px;
+	position: relative;
+	margin-right: 3px;
+	background-color: transparent;
+}
+.coordenadas-resultados .num-coordenada.active.completo:after {
+	content: '\2022';
+	top: -12px;
+	    
+	/* ADMIN */
+	left: 6px;
+}
+
+
+.box-btn-borrar {
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 20px;
+}
+.footer-botones{
+	text-align: center;
+	margin-top: 2%;
+}
+.footer-botones button{
+	margin:0% 2%;
+	width:30%;
+	font-weight:700;
+}
+.btn-back,.btn-back:active,.btn-back:focus{
+	border: 1px solid !important;
+	border-radius:4px;
+	
+}
+
+/*TABLET*/
+
+@media only screen and (min-width: 580px) {
+	.activacion-firma {
+		border: 1px solid;
+		border-radius: 4px;
+		margin-bottom: 5%;
+		padding-top: 3%;
+		/* text-align: center; */
+		margin-top: 2%;
+		padding: 4%;
+		float: left;
+		background-color: #f7f7f7;
+	}
+	.btn-firma {
+		margin: 0px auto;
+		width: 246px;
+		float: left;
+	}
+
+	.box-btn-borrar {
+		width: 100%;
+		margin: 0px auto;
+		text-align: center;
+		padding-top: 20px;
+		float: left;
+	}
+
+}
+
